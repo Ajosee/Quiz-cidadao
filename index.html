@@ -30,30 +30,15 @@
       text-align: center;
       font-weight: bold;
     }
-    .content {
-      padding: 2rem;
-    }
+    .content { padding: 2rem; }
     .question-text {
       font-size: 1.3rem;
       font-weight: 600;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
       line-height: 1.3;
       color: #0b2b44;
     }
-    .dica {
-      background: #eef2f5;
-      padding: 0.5rem;
-      border-radius: 0.5rem;
-      margin-bottom: 1rem;
-      font-style: italic;
-      font-size: 0.9rem;
-    }
-    .alternativas {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
+    .alternativas { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem; }
     .alt-btn {
       background: #f1f5f9;
       border: 2px solid #cbd5e1;
@@ -94,6 +79,46 @@
       justify-content: space-between;
       margin-bottom: 1rem;
       font-weight: bold;
+      flex-wrap: wrap;
+    }
+    .streak-bar {
+      background: #e0e0e0;
+      border-radius: 1rem;
+      height: 10px;
+      width: 100%;
+      margin: 0.5rem 0;
+      overflow: hidden;
+    }
+    .streak-fill {
+      background: #4caf50;
+      width: 0%;
+      height: 100%;
+      transition: width 0.2s;
+    }
+    .hint-area {
+      background: #fff3cd;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      border-left: 4px solid #ffc107;
+    }
+    .conquistas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .badge {
+      background: #ffc107;
+      border-radius: 2rem;
+      padding: 0.2rem 0.7rem;
+      font-size: 0.7rem;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.2rem;
     }
     .hidden { display: none; }
     footer {
@@ -111,12 +136,12 @@
     button { background: #2e7d32; color: white; border: none; border-radius: 2rem; padding: 0.8rem 1.5rem; font-size: 1rem; font-weight: bold; cursor: pointer; width: 100%; transition: 0.2s; }
     button:hover { background: #1b5e20; }
     .form-group { margin-bottom: 1.2rem; }
-    label { display: block; font-weight: 600; margin-bottom: 0.3rem; color: #1e2a3a; }
     input, select { width: 100%; padding: 0.6rem; border-radius: 0.5rem; border: 1px solid #ccc; font-size: 1rem; }
   </style>
 </head>
 <body>
 <div class="container" id="app">
+  <!-- TELA DE IDENTIFICAÇÃO -->
   <div id="identificacao">
     <div class="header">🧠 CIDADÃO QUIZ – IDENTIFICAÇÃO</div>
     <div class="content">
@@ -145,14 +170,20 @@
       <p style="margin-top:1rem; font-size:0.8rem;">Seus dados ficam apenas no seu navegador.</p>
     </div>
   </div>
+
+  <!-- TELA DO QUIZ -->
   <div id="quiz-container" class="hidden">
-    <div class="header" id="quiz-header">🧠 CIDADÃO QUIZ</div>
+    <div class="header">🧠 CIDADÃO QUIZ</div>
     <div class="content">
       <div class="progress-info">
         <span id="nivel-info">Nível 1</span>
         <span>⭐ Pontos: <span id="pontuacao">0</span></span>
+        <span>🔥 Sequência: <span id="sequencia">0</span></span>
       </div>
+      <div class="streak-bar"><div class="streak-fill" id="streak-fill"></div></div>
+      <div id="conquistas-area" class="conquistas"></div>
       <div id="pergunta-area"></div>
+      <div id="hint-area" class="hint-area hidden"></div>
       <div id="feedback-area" class="feedback"></div>
       <button id="next-btn" class="next-btn" disabled>Responder & Próxima ❯</button>
     </div>
@@ -161,16 +192,25 @@
 </div>
 <script src="perguntas.js"></script>
 <script>
+  // --- DADOS DO USUÁRIO ---
   let userData = null;
-  let perguntas = [];
+
+  // --- ESTADO DO QUIZ ---
+  let perguntas = [];               // perguntas do Nível 1
   let indiceAtual = 0;
   let pontuacao = 0;
+  let sequenciaAcertos = 0;
   let respostaSelecionada = null;
   let jaRespondeu = false;
-  let nivelAtual = 1;
-  const PONTOS_N1_INICIO = 5;
-  const PONTOS_N1_INCREMENTO = 1;
+  let timerHint = null;
+  let nivelAtual = 1;               // 1 ou 2
+  const PONTOS_N1_INICIO = 5;       // primeira pergunta
+  const PONTOS_N1_INCREMENTO = 1;   // +1 a cada pergunta
 
+  // Conquistas (medalhas)
+  let conquistas = [];
+
+  // Elementos DOM
   const identificacaoDiv = document.getElementById('identificacao');
   const quizContainer = document.getElementById('quiz-container');
   const btnIniciar = document.getElementById('btn-iniciar-quiz');
@@ -178,9 +218,47 @@
   const feedbackDiv = document.getElementById('feedback-area');
   const nextBtn = document.getElementById('next-btn');
   const pontuacaoSpan = document.getElementById('pontuacao');
+  const sequenciaSpan = document.getElementById('sequencia');
+  const streakFill = document.getElementById('streak-fill');
+  const hintArea = document.getElementById('hint-area');
   const nivelInfoSpan = document.getElementById('nivel-info');
+  const conquistasArea = document.getElementById('conquistas-area');
 
-  // Avatar selection
+  // --- Carregar conquistas do localStorage e exibir
+  function carregarConquistas() {
+    const salvas = localStorage.getItem('cidadao_conquistas');
+    if (salvas) conquistas = JSON.parse(salvas);
+    else conquistas = [];
+    atualizarDisplayConquistas();
+  }
+
+  function salvarConquistas() {
+    localStorage.setItem('cidadao_conquistas', JSON.stringify(conquistas));
+  }
+
+  function adicionarConquista(nomeMedalha) {
+    if (!conquistas.includes(nomeMedalha)) {
+      conquistas.push(nomeMedalha);
+      salvarConquistas();
+      atualizarDisplayConquistas();
+      // Exibe notificação temporária
+      const notif = document.createElement('div');
+      notif.className = 'feedback correct';
+      notif.style.marginTop = '0.5rem';
+      notif.style.padding = '0.5rem';
+      notif.style.borderRadius = '0.5rem';
+      notif.innerHTML = `🏅 <strong>NOVA CONQUISTA!</strong> Você desbloqueou: ${nomeMedalha}`;
+      feedbackDiv.parentNode.insertBefore(notif, feedbackDiv.nextSibling);
+      setTimeout(() => notif.remove(), 5000);
+    }
+  }
+
+  function atualizarDisplayConquistas() {
+    if (!conquistasArea) return;
+    conquistasArea.innerHTML = conquistas.map(c => `<span class="badge">🏅 ${c}</span>`).join('');
+  }
+
+  // --- Avatar e interesses ---
   const avatarDivs = document.querySelectorAll('.avatar');
   const avatarInput = document.getElementById('avatar');
   avatarDivs.forEach(div => {
@@ -192,6 +270,7 @@
   });
   if (avatarDivs.length) avatarDivs[0].classList.add('selected');
 
+  // --- Iniciar quiz após identificação ---
   btnIniciar.addEventListener('click', () => {
     const nome = document.getElementById('nome').value.trim();
     const idade = parseInt(document.getElementById('idade').value);
@@ -203,9 +282,11 @@
     localStorage.setItem('cidadao_user', JSON.stringify(userData));
     identificacaoDiv.style.display = 'none';
     quizContainer.classList.remove('hidden');
+    carregarConquistas();
     iniciarNivel1();
   });
 
+  // --- Carregar Nível 1 do banco de perguntas ---
   function iniciarNivel1() {
     if (typeof bancoPerguntas === 'undefined') {
       perguntaArea.innerHTML = '<p style="color:red;">Erro: banco de perguntas não carregado.</p>';
@@ -218,12 +299,16 @@
     }
     indiceAtual = 0;
     pontuacao = 0;
-    atualizarPontuacao();
+    sequenciaAcertos = 0;
+    atualizarInterface();
     carregarPergunta();
   }
 
-  function atualizarPontuacao() {
+  function atualizarInterface() {
     pontuacaoSpan.innerText = pontuacao;
+    sequenciaSpan.innerText = sequenciaAcertos;
+    const percent = (sequenciaAcertos / 5) * 100;
+    streakFill.style.width = Math.min(percent, 100) + '%';
   }
 
   function carregarPergunta() {
@@ -234,13 +319,13 @@
     const p = perguntas[indiceAtual];
     const valorPergunta = PONTOS_N1_INICIO + (indiceAtual * PONTOS_N1_INCREMENTO);
     let html = `<div class="question-text">${p.texto}</div>`;
-    html += `<div class="dica">⚡ Dica: ${p.artigo}</div>`;
     html += `<div class="alternativas" id="alternativas">`;
     p.alternativas.forEach((alt, idx) => {
       html += `<div class="alt-btn" data-alt="${idx}">${String.fromCharCode(65+idx)}) ${alt}</div>`;
     });
     html += `</div>`;
     perguntaArea.innerHTML = html;
+
     document.querySelectorAll('.alt-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         if (jaRespondeu) return;
@@ -249,8 +334,27 @@
         document.querySelectorAll('.alt-btn').forEach(b => b.classList.remove('selected'));
         btn.classList.add('selected');
         nextBtn.disabled = false;
+        if (timerHint) clearTimeout(timerHint);
+        hintArea.classList.add('hidden');
       });
     });
+
+    // Dica progressiva
+    if (timerHint) clearTimeout(timerHint);
+    hintArea.classList.add('hidden');
+    hintArea.innerHTML = '';
+    timerHint = setTimeout(() => {
+      if (!jaRespondeu && respostaSelecionada === null) {
+        hintArea.innerHTML = `<strong>🔍 Dica:</strong> ${p.artigo}`;
+        hintArea.classList.remove('hidden');
+        setTimeout(() => {
+          if (!jaRespondeu && respostaSelecionada === null) {
+            hintArea.innerHTML = `<strong>🔍 Dica avançada:</strong> ${p.explicacao.substring(0, 100)}...`;
+          }
+        }, 10000);
+      }
+    }, 10000);
+
     feedbackDiv.style.display = 'none';
     feedbackDiv.innerHTML = '';
     nextBtn.disabled = true;
@@ -264,20 +368,42 @@
     const p = perguntas[indiceAtual];
     const correta = (respostaSelecionada === p.correta);
     const valorPergunta = PONTOS_N1_INICIO + (indiceAtual * PONTOS_N1_INCREMENTO);
+    let pontosGanhos = valorPergunta;
+
     if (correta) {
-      pontuacao += valorPergunta;
-      atualizarPontuacao();
+      sequenciaAcertos++;
+      // Verifica conquistas a cada 5 acertos consecutivos
+      if (sequenciaAcertos % 5 === 0 && sequenciaAcertos > 0) {
+        const medalha = `🏅 ${sequenciaAcertos} acertos consecutivos`;
+        adicionarConquista(medalha);
+        pontosGanhos += 5;  // bônus
+        // Mostra mensagem de bônus
+        const bonusMsg = document.createElement('div');
+        bonusMsg.className = 'feedback correct';
+        bonusMsg.style.marginTop = '0.5rem';
+        bonusMsg.style.padding = '0.5rem';
+        bonusMsg.style.borderRadius = '0.5rem';
+        bonusMsg.innerHTML = `🎁 <strong>BÔNUS DE SEQUÊNCIA!</strong> Você acertou ${sequenciaAcertos} perguntas seguidas! +5 pontos extras.`;
+        feedbackDiv.parentNode.insertBefore(bonusMsg, feedbackDiv.nextSibling);
+        setTimeout(() => bonusMsg.remove(), 4000);
+      }
+      pontuacao += pontosGanhos;
+      atualizarInterface();
       feedbackDiv.className = 'feedback correct';
       feedbackDiv.innerHTML = `<strong>✅ CORRETO!</strong><br>📖 ${p.artigo}<br>💡 ${p.explicacao}`;
     } else {
+      sequenciaAcertos = 0;
+      atualizarInterface();
       const alternativaCorreta = p.alternativas[p.correta];
       feedbackDiv.className = 'feedback wrong';
-      feedbackDiv.innerHTML = `<strong>❌ ERRADO.</strong> A resposta correta é: ${String.fromCharCode(65+p.correta)}) ${alternativaCorreta}<br>📖 ${p.artigo}<br>💡 ${p.explicacao}`;
+      feedbackDiv.innerHTML = `<strong>❌ ERRADO.</strong> A resposta certa é: ${String.fromCharCode(65+p.correta)}) ${alternativaCorreta}<br>📖 ${p.artigo}<br>💡 ${p.explicacao}`;
     }
     feedbackDiv.style.display = 'block';
     jaRespondeu = true;
     nextBtn.disabled = false;
     nextBtn.innerText = 'Próxima ➡';
+    if (timerHint) clearTimeout(timerHint);
+    hintArea.classList.add('hidden');
   }
 
   function avancar() {
@@ -294,13 +420,15 @@
     perguntaArea.innerHTML = `<div style="background:#e0f2e9; padding:1rem; border-radius:1rem; text-align:center;">
       <h3>🏆 Nível 1 concluído!</h3>
       <p>Pontuação final: ${pontuacao} pontos</p>
-      <p>Em breve você poderá avançar para o Nível 2.</p>
+      <p>Maior sequência de acertos: ${sequenciaAcertos}</p>
+      <p>Conquistas obtidas: ${conquistas.length}</p>
       <button id="reiniciar-quiz" style="margin-top:1rem;">🔁 Reiniciar Quiz</button>
     </div>`;
     const reiniciarBtn = document.getElementById('reiniciar-quiz');
     if (reiniciarBtn) reiniciarBtn.addEventListener('click', () => location.reload());
   }
 
+  // Eventos dos botões
   nextBtn.addEventListener('click', () => {
     if (!jaRespondeu && respostaSelecionada !== null) {
       responder();
