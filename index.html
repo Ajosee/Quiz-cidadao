@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Quiz Cidadão – Seus Direitos</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       background: linear-gradient(145deg, #1e3c72 0%, #2a5298 100%);
       font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
@@ -15,8 +19,8 @@
       align-items: center;
       padding: 1rem;
     }
-    .quiz-container {
-      max-width: 800px;
+    .container {
+      max-width: 700px;
       width: 100%;
       background: rgba(255,255,255,0.95);
       border-radius: 2rem;
@@ -24,75 +28,66 @@
       overflow: hidden;
       transition: all 0.2s;
     }
-    .quiz-header {
+    .header {
       background: #0b2b44;
       color: white;
       padding: 1rem 1.5rem;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 0.5rem;
+      text-align: center;
       font-weight: bold;
     }
-    .quiz-header span {
-      background: #ffc107;
-      color: #1e2a3a;
-      padding: 0.2rem 0.8rem;
-      border-radius: 2rem;
-      font-size: 0.9rem;
-    }
-    .quiz-body {
+    .content {
       padding: 2rem;
     }
-    .question-text {
-      font-size: 1.4rem;
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+    label {
+      display: block;
       font-weight: 600;
-      margin-bottom: 1.5rem;
-      line-height: 1.3;
-      color: #0b2b44;
+      margin-bottom: 0.3rem;
+      color: #1e2a3a;
     }
-    .alternativas {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-    .alt-btn {
-      background: #f1f5f9;
-      border: 2px solid #cbd5e1;
-      border-radius: 1rem;
-      padding: 0.8rem 1rem;
+    input, select {
+      width: 100%;
+      padding: 0.6rem;
+      border-radius: 0.5rem;
+      border: 1px solid #ccc;
       font-size: 1rem;
-      text-align: left;
+    }
+    .avatar-options {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin: 0.5rem 0;
+    }
+    .avatar {
       cursor: pointer;
+      text-align: center;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
       transition: 0.1s;
-      font-weight: 500;
-    }
-    .alt-btn:hover {
-      background: #e2e8f0;
-      transform: scale(1.01);
-    }
-    .alt-btn.selected {
-      background: #d9f0e6;
-      border-color: #2e7d32;
-    }
-    .feedback {
       background: #e9ecef;
-      border-radius: 1rem;
-      padding: 1rem;
-      margin: 1rem 0;
-      display: none;
-      border-left: 6px solid #2a5298;
     }
-    .feedback.correct {
-      border-left-color: #2e7d32;
-      background: #e0f2e9;
+    .avatar.selected {
+      background: #4caf50;
+      color: white;
     }
-    .feedback.wrong {
-      border-left-color: #c62828;
-      background: #ffe6e6;
+    .interest-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
     }
-    .next-btn {
+    .interest-options label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      background: #e9ecef;
+      padding: 0.3rem 0.8rem;
+      border-radius: 2rem;
+      cursor: pointer;
+    }
+    button {
       background: #2e7d32;
       color: white;
       border: none;
@@ -104,30 +99,11 @@
       width: 100%;
       transition: 0.2s;
     }
-    .next-btn:disabled {
-      background: #9e9e9e;
-      cursor: not-allowed;
+    button:hover {
+      background: #1b5e20;
     }
-    .result-area {
-      text-align: center;
-      padding: 1rem;
-      background: #f8f9fa;
-      border-radius: 1rem;
-      margin-top: 1rem;
-    }
-    .badge-area {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.5rem;
-      margin: 1rem 0;
-    }
-    .badge {
-      background: #ffb74d;
-      padding: 0.2rem 0.8rem;
-      border-radius: 2rem;
-      font-size: 0.8rem;
-      font-weight: bold;
+    .hidden {
+      display: none;
     }
     footer {
       background: #eef2f5;
@@ -136,206 +112,116 @@
       font-size: 0.7rem;
       color: #2c3e66;
     }
-    @media (max-width: 550px) {
-      .quiz-body { padding: 1.2rem; }
-      .question-text { font-size: 1.2rem; }
-      .alt-btn { padding: 0.6rem; }
-    }
   </style>
 </head>
 <body>
-<div class="quiz-container" id="quizApp">
-  <div class="quiz-header">
-    <div>🧠 CIDADÃO QUIZ</div>
-    <div>⭐ Pontos: <span id="scoreDisplay">0</span></div>
-    <div>🏆 Nível: <span id="levelDisplay">Bronze</span></div>
+<div class="container" id="app">
+  <div class="header">🧠 CIDADÃO QUIZ – IDENTIFICAÇÃO</div>
+  <div class="content" id="identificacao">
+    <div class="form-group">
+      <label>👤 Seu nome:</label>
+      <input type="text" id="nome" placeholder="Ex: João Silva">
+    </div>
+    <div class="form-group">
+      <label>🎂 Idade:</label>
+      <input type="number" id="idade" min="12" max="99" placeholder="16">
+    </div>
+    <div class="form-group">
+      <label>🧑‍🎨 Escolha seu avatar:</label>
+      <div class="avatar-options">
+        <div class="avatar" data-avatar="estudante">👨‍🎓 Estudante</div>
+        <div class="avatar" data-avatar="profissional">👩‍💼 Profissional</div>
+        <div class="avatar" data-avatar="cidadao">🧙‍♂️ Cidadão</div>
+      </div>
+      <input type="hidden" id="avatar" value="estudante">
+    </div>
+    <div class="form-group">
+      <label>📚 Área de interesse (opcional):</label>
+      <div class="interest-options">
+        <label><input type="checkbox" value="consumidor"> Consumidor</label>
+        <label><input type="checkbox" value="trabalho"> Trabalho</label>
+        <label><input type="checkbox" value="penal"> Penal</label>
+        <label><input type="checkbox" value="constitucional"> Constitucional</label>
+        <label><input type="checkbox" value="todos" checked> Todos</label>
+      </div>
+    </div>
+    <button id="btn-iniciar-quiz">🚀 INICIAR JORNADA</button>
+    <p style="margin-top:1rem; font-size:0.8rem; color:#555;">Seus dados ficam apenas no seu navegador. Usaremos para personalizar sua experiência.</p>
   </div>
-  <div class="quiz-body" id="quizBody">
-    <!-- Conteúdo gerado dinamicamente -->
+  <div id="quiz-container" class="hidden">
+    <!-- Aqui será carregado o quiz propriamente dito -->
+    <div class="header" id="quiz-header">🧠 CIDADÃO QUIZ</div>
+    <div class="content" id="quiz-content">
+      <!-- O conteúdo dinâmico do quiz virá via JS -->
+    </div>
   </div>
-  <footer>⚖️ Baseado na CF/88, CDC, ECA, CLT, CPC, CPP, CTB, LGPD. Cada resposta tem o artigo da lei.</footer>
+  <footer>⚖️ Baseado na CF/88, CDC, ECA, CLT, CPC, CPP, CTB.</footer>
 </div>
 
 <script src="perguntas.js"></script>
 <script>
-  // Variáveis globais
-  let perguntasN1 = [];
-  let perguntasEmbaralhadas = [];
-  let perguntaAtualIndex = 0;
-  let pontuacao = 0;
-  let respostaSelecionada = null;
-  let jaRespondeu = false;
-  let sequenciaAcertos = 0;
-  let totalPontosNivel1 = 0;
+  // DOM elements
+  const identificacaoDiv = document.getElementById('identificacao');
+  const quizContainer = document.getElementById('quiz-container');
+  const btnIniciar = document.getElementById('btn-iniciar-quiz');
 
-  // Elementos DOM
-  const quizBody = document.getElementById('quizBody');
-  const scoreSpan = document.getElementById('scoreDisplay');
-  const levelSpan = document.getElementById('levelDisplay');
+  // Avatar selection
+  const avatarDivs = document.querySelectorAll('.avatar');
+  const avatarInput = document.getElementById('avatar');
+  avatarDivs.forEach(div => {
+    div.addEventListener('click', () => {
+      avatarDivs.forEach(d => d.classList.remove('selected'));
+      div.classList.add('selected');
+      avatarInput.value = div.dataset.avatar;
+    });
+  });
+  // Seleciona primeiro avatar por padrão
+  avatarDivs[0].classList.add('selected');
 
-  function shuffleArray(arr) {
-    for (let i = arr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [arr[i], arr[j]] = [arr[j], arr[i]];
+  // Salvar dados e iniciar quiz
+  btnIniciar.addEventListener('click', () => {
+    const nome = document.getElementById('nome').value.trim();
+    const idade = parseInt(document.getElementById('idade').value);
+    const avatar = avatarInput.value;
+    const interesses = Array.from(document.querySelectorAll('.interest-options input:checked')).map(cb => cb.value);
+    
+    if (!nome) {
+      alert('Por favor, digite seu nome.');
+      return;
     }
-    return arr;
-  }
-
-  function atualizarPontuacao() {
-    scoreSpan.innerText = pontuacao;
-    if (pontuacao < 200) levelSpan.innerText = 'Bronze';
-    else if (pontuacao < 500) levelSpan.innerText = 'Prata';
-    else if (pontuacao < 1000) levelSpan.innerText = 'Ouro';
-    else levelSpan.innerText = 'Platina';
-  }
-
-  function shuffleAlternativas(alternativas, corretaOriginal) {
-    const pares = alternativas.map((alt, idx) => ({ alt, idx }));
-    for (let i = pares.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [pares[i], pares[j]] = [pares[j], pares[i]];
-    }
-    const novasAlts = pares.map(p => p.alt);
-    const novoIndiceCorreto = pares.findIndex(p => p.idx === corretaOriginal);
-    return { alternativas: novasAlts, corretaIndex: novoIndiceCorreto };
-  }
-
-  function carregarPergunta() {
-    if (perguntaAtualIndex >= perguntasEmbaralhadas.length) {
-      finalizarQuiz();
+    if (isNaN(idade) || idade < 12 || idade > 99) {
+      alert('Idade inválida (12 a 99 anos).');
       return;
     }
 
-    const p = perguntasEmbaralhadas[perguntaAtualIndex];
-    const { alternativas, corretaIndex } = shuffleAlternativas(p.alternativas, p.correta);
-    p.alternativasAtuais = alternativas;
-    p.corretaAtual = corretaIndex;
+    const userData = { nome, idade, avatar, interesses };
+    localStorage.setItem('cidadao_user', JSON.stringify(userData));
+    
+    // Esconder tela de identificação e mostrar o quiz
+    identificacaoDiv.style.display = 'none';
+    quizContainer.classList.remove('hidden');
+    
+    // Iniciar o quiz (chamar função principal)
+    iniciarQuiz();
+  });
 
-    let html = `
-      <div class="question-text">${p.texto}</div>
-      <div class="alternativas" id="alternativasArea">
-    `;
-    p.alternativasAtuais.forEach((alt, idx) => {
-      html += `<div class="alt-btn" data-alt-index="${idx}">${String.fromCharCode(65+idx)}) ${alt}</div>`;
-    });
-    html += `</div><div class="feedback" id="feedbackArea"></div>
-             <button class="next-btn" id="nextBtn" disabled>Responder & Próxima ❯</button>`;
-    quizBody.innerHTML = html;
-
-    document.querySelectorAll('.alt-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        if (jaRespondeu) return;
-        const idx = parseInt(btn.dataset.altIndex);
-        selecionarAlternativa(idx);
-      });
-    });
-
-    jaRespondeu = false;
-    respostaSelecionada = null;
-    const nextBtn = document.getElementById('nextBtn');
-    nextBtn.disabled = true;
-    nextBtn.innerText = 'Responder & Próxima ❯';
-  }
-
-  function selecionarAlternativa(idx) {
-    if (jaRespondeu) return;
-    respostaSelecionada = idx;
-    document.querySelectorAll('.alt-btn').forEach(btn => btn.classList.remove('selected'));
-    const btns = document.querySelectorAll('.alt-btn');
-    btns[idx].classList.add('selected');
-    document.getElementById('nextBtn').disabled = false;
-  }
-
-  function corrigirEResponder() {
-    if (respostaSelecionada === null) return;
-    const p = perguntasEmbaralhadas[perguntaAtualIndex];
-    const correta = (respostaSelecionada === p.corretaAtual);
-    const feedbackDiv = document.getElementById('feedbackArea');
-    let pontosGanhos = p.valorPontos || 10; // valor padrão
-    if (correta) {
-      pontuacao += pontosGanhos;
-      sequenciaAcertos++;
-      atualizarPontuacao();
-      feedbackDiv.className = 'feedback correct';
-      feedbackDiv.innerHTML = `<strong>✅ CORRETO!</strong><br>📖 ${p.artigo}<br>💡 ${p.explicacao}<br>➕ Você ganhou ${pontosGanhos} pontos! (sequência: ${sequenciaAcertos})`;
-      if (sequenciaAcertos % 5 === 0) {
-        feedbackDiv.innerHTML += `<br>🎁 **RECOMPENSA!** Você completou ${sequenciaAcertos} acertos consecutivos! +5 pontos extras.`;
-        pontuacao += 5;
-        atualizarPontuacao();
-      }
-    } else {
-      sequenciaAcertos = 0;
-      feedbackDiv.className = 'feedback wrong';
-      const alternativaCorretaTexto = p.alternativasAtuais[p.corretaAtual];
-      feedbackDiv.innerHTML = `<strong>❌ ERRADO.</strong> A resposta certa é: ${String.fromCharCode(65+p.corretaAtual)}) ${alternativaCorretaTexto}<br>📖 ${p.artigo}<br>💡 ${p.explicacao}`;
-    }
-    feedbackDiv.style.display = 'block';
-    jaRespondeu = true;
-    const nextBtn = document.getElementById('nextBtn');
-    nextBtn.disabled = false;
-    nextBtn.innerText = 'Próxima ➡';
-    document.querySelectorAll('.alt-btn').forEach(btn => {
-      const newBtn = btn.cloneNode(true);
-      btn.parentNode.replaceChild(newBtn, btn);
-    });
-  }
-
-  function avancar() {
-    if (!jaRespondeu) return;
-    perguntaAtualIndex++;
-    if (perguntaAtualIndex < perguntasEmbaralhadas.length) {
-      carregarPergunta();
-    } else {
-      finalizarQuiz();
-    }
-  }
-
-  function finalizarQuiz() {
-    let mensagem = `<div class="result-area"><h2>🏁 Fim do Nível 1!</h2>
-                    <p>Sua pontuação final: <strong>${pontuacao} pontos</strong><br>Nível: ${levelSpan.innerText}</p>`;
-    if (pontuacao >= 2000) mensagem += `<p>🎉 Parabéns! Você dominou a Constituição!</p>`;
-    else mensagem += `<p>📚 Continue estudando! Tente novamente para desbloquear o Nível 2.</p>`;
-    mensagem += `<div class="badge-area"><div class="badge">⭐ Cidadão em formação</div></div>
-                 <button id="reiniciarBtn" style="background:#2a5298; margin-top:1rem;">🔄 Jogar novamente</button></div>`;
-    quizBody.innerHTML = mensagem;
-    document.getElementById('reiniciarBtn').addEventListener('click', () => {
-      iniciarQuiz();
-    });
-  }
-
+  // Função principal do quiz (será expandida nas próximas etapas)
+  // Por enquanto, uma versão simples para testar a transição
   function iniciarQuiz() {
-    if (!perguntasN1.length) {
-      quizBody.innerHTML = '<div class="result-area">Erro: Banco de perguntas não carregado. Verifique o arquivo perguntas.js</div>';
-      return;
-    }
-    perguntasEmbaralhadas = shuffleArray([...perguntasN1]);
-    perguntaAtualIndex = 0;
-    pontuacao = 0;
-    sequenciaAcertos = 0;
-    atualizarPontuacao();
-    jaRespondeu = false;
-    respostaSelecionada = null;
-    carregarPergunta();
+    const quizContent = document.getElementById('quiz-content');
+    quizContent.innerHTML = '<p style="text-align:center;">Carregando perguntas... Aguarde.</p>';
+    
+    // Simulação: mostrar uma mensagem de sucesso (depois substituiremos pelo quiz real)
+    setTimeout(() => {
+      quizContent.innerHTML = `
+        <div style="background:#e0f2e9; padding:1rem; border-radius:1rem;">
+          <h3>✅ Identificação concluída!</h3>
+          <p>Em breve você verá as perguntas do Nível 1 aqui.</p>
+          <p>Seus dados foram salvos no navegador.</p>
+        </div>
+      `;
+    }, 500);
   }
-
-  // Aguarda o carregamento do arquivo perguntas.js
-  window.addEventListener('load', () => {
-    if (typeof perguntasN1 !== 'undefined' && perguntasN1.length) {
-      iniciarQuiz();
-    } else {
-      quizBody.innerHTML = '<div class="result-area">Carregando perguntas...</div>';
-    }
-  });
-
-  quizBody.addEventListener('click', (e) => {
-    if (e.target && e.target.id === 'nextBtn') {
-      if (!jaRespondeu && respostaSelecionada !== null) {
-        corrigirEResponder();
-      } else if (jaRespondeu) {
-        avancar();
-      }
-    }
-  });
 </script>
 </body>
 </html>
