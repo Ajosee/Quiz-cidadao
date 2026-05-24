@@ -1,987 +1,987 @@
 const bancoPerguntas = [
   {
     "nivel": 1,
-    "texto": "O direito à vida é garantido pela Constituição?",
+    "texto": "Você foi detido pela polícia sem ser informado dos seus direitos. Qual garantia constitucional foi violada?",
     "alternativas": [
-      "Sim, absoluto",
-      "Sim, com restrições (pena de morte em guerra)",
-      "Não",
-      "Apenas para brasileiros"
+      "Direito à propriedade",
+      "Direito ao silêncio e à assistência de advogado",
+      "Direito de ir e vir",
+      "Direito à educação"
     ],
     "correta": 1,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
+    "artigo": "CF/88, art. 5º, LXIII",
+    "explicacao": "O art. 5º, LXIII garante ao preso o direito de ser informado de seus direitos, incluindo o silêncio e a assistência de advogado.",
     "tema": "direitos individuais"
   },
   {
     "nivel": 1,
-    "texto": "São direitos sociais, exceto:",
+    "texto": "Você foi demitido e a empresa não pagou o aviso prévio. Qual direito social foi desrespeitado?",
     "alternativas": [
-      "Educação",
-      "Saúde",
-      "Lucro empresarial",
-      "Moradia"
-    ],
-    "correta": 2,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A União é dividida em quantos Poderes?",
-    "alternativas": [
-      "Três (Executivo, Legislativo, Judiciário)",
-      "Dois (Executivo e Legislativo)",
-      "Quatro (incluindo o MP)",
-      "Cinco"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "São brasileiros natos:",
-    "alternativas": [
-      "Os nascidos no estrangeiro de pai brasileiro",
-      "Os naturalizados",
-      "Os nascidos no Brasil",
-      "Os que optarem pela nacionalidade"
-    ],
-    "correta": 2,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O voto é obrigatório para maiores de:",
-    "alternativas": [
-      "18 anos",
-      "16 anos",
-      "21 anos",
-      "14 anos"
+      "Direito à saúde",
+      "Direito ao trabalho e à remuneração",
+      "Direito à moradia",
+      "Direito ao lazer"
     ],
     "correta": 1,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
+    "artigo": "CF/88, art. 7º, XXI",
+    "explicacao": "O art. 7º, XXI assegura o aviso prévio proporcional ao tempo de serviço.",
+    "tema": "direitos sociais"
   },
   {
     "nivel": 1,
-    "texto": "O Congresso Nacional é composto por:",
+    "texto": "Você foi impedido de votar por não ter o título de eleitor. Qual condição de elegibilidade foi ignorada?",
     "alternativas": [
-      "Câmara dos Deputados e Senado Federal",
-      "Apenas Câmara",
-      "Apenas Senado",
-      "Câmara, Senado e Tribunal de Contas"
+      "Alistamento eleitoral obrigatório após 18 anos",
+      "Idade mínima para votar",
+      "Nacionalidade brasileira",
+      "Não ter condenação criminal"
     ],
     "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
+    "artigo": "CF/88, art. 14, § 1º",
+    "explicacao": "O alistamento eleitoral é obrigatório para maiores de 18 anos e facultativo para 16 e 17.",
+    "tema": "direitos políticos"
   },
   {
     "nivel": 1,
-    "texto": "Compete privativamente ao Presidente da República:",
+    "texto": "A polícia entrou na sua casa sem mandado judicial nem flagrante. Qual direito foi violado?",
     "alternativas": [
-      "Sancionar leis",
-      "Elaborar emendas constitucionais",
-      "Julgar o Presidente",
-      "Nomear ministros do STF (com aprovação do Senado)"
-    ],
-    "correta": 3,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O STF é composto por quantos ministros?",
-    "alternativas": [
-      "11",
-      "13",
-      "9",
-      "15"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A ação direta de inconstitucionalidade pode ser proposta por:",
-    "alternativas": [
-      "Qualquer cidadão",
-      "Partidos com representação no Congresso",
-      "O Presidente da República",
-      "Todos os anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A competência para instituir impostos é da:",
-    "alternativas": [
-      "União",
-      "Estados",
-      "Municípios",
-      "Distrito Federal"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O direito à vida é garantido pela Constituição?",
-    "alternativas": [
-      "Sim, absoluto",
-      "Sim, com restrições (pena de morte em guerra)",
-      "Não",
-      "Apenas para brasileiros"
+      "Direito de propriedade",
+      "Inviolabilidade do domicílio",
+      "Direito à intimidade",
+      "Direito de reunião"
     ],
     "correta": 1,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
+    "artigo": "CF/88, art. 5º, XI",
+    "explicacao": "A casa é asilo inviolável, salvo flagrante delito, desastre ou ordem judicial.",
     "tema": "direitos individuais"
   },
   {
     "nivel": 1,
-    "texto": "São direitos sociais, exceto:",
+    "texto": "Você sofreu ofensas em uma rede social e quer direito de resposta. Em qual artigo da CF isso está previsto?",
     "alternativas": [
-      "Educação",
-      "Saúde",
-      "Lucro empresarial",
-      "Moradia"
-    ],
-    "correta": 2,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A União é dividida em quantos Poderes?",
-    "alternativas": [
-      "Três (Executivo, Legislativo, Judiciário)",
-      "Dois (Executivo e Legislativo)",
-      "Quatro (incluindo o MP)",
-      "Cinco"
+      "Art. 5º, V",
+      "Art. 6º",
+      "Art. 14",
+      "Art. 37"
     ],
     "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
+    "artigo": "CF/88, art. 5º, V",
+    "explicacao": "O art. 5º, V assegura direito de resposta proporcional ao agravo.",
     "tema": "direitos individuais"
   },
   {
     "nivel": 1,
-    "texto": "São brasileiros natos:",
+    "texto": "Você foi detido pela polícia sem ser informado dos seus direitos. Qual garantia constitucional foi violada? (variação)",
     "alternativas": [
-      "Os nascidos no estrangeiro de pai brasileiro",
-      "Os naturalizados",
-      "Os nascidos no Brasil",
-      "Os que optarem pela nacionalidade"
-    ],
-    "correta": 2,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O voto é obrigatório para maiores de:",
-    "alternativas": [
-      "18 anos",
-      "16 anos",
-      "21 anos",
-      "14 anos"
+      "Direito à propriedade",
+      "Direito ao silêncio e à assistência de advogado",
+      "Direito de ir e vir",
+      "Direito à educação"
     ],
     "correta": 1,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
+    "artigo": "CF/88, art. 5º, LXIII",
+    "explicacao": "O art. 5º, LXIII garante ao preso o direito de ser informado de seus direitos, incluindo o silêncio e a assistência de advogado. (contexto similar)",
     "tema": "direitos individuais"
   },
   {
     "nivel": 1,
-    "texto": "O Congresso Nacional é composto por:",
+    "texto": "Você foi demitido e a empresa não pagou o aviso prévio. Qual direito social foi desrespeitado? (variação)",
     "alternativas": [
-      "Câmara dos Deputados e Senado Federal",
-      "Apenas Câmara",
-      "Apenas Senado",
-      "Câmara, Senado e Tribunal de Contas"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "Compete privativamente ao Presidente da República:",
-    "alternativas": [
-      "Sancionar leis",
-      "Elaborar emendas constitucionais",
-      "Julgar o Presidente",
-      "Nomear ministros do STF (com aprovação do Senado)"
-    ],
-    "correta": 3,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O STF é composto por quantos ministros?",
-    "alternativas": [
-      "11",
-      "13",
-      "9",
-      "15"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A ação direta de inconstitucionalidade pode ser proposta por:",
-    "alternativas": [
-      "Qualquer cidadão",
-      "Partidos com representação no Congresso",
-      "O Presidente da República",
-      "Todos os anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A competência para instituir impostos é da:",
-    "alternativas": [
-      "União",
-      "Estados",
-      "Municípios",
-      "Distrito Federal"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O direito à vida é garantido pela Constituição?",
-    "alternativas": [
-      "Sim, absoluto",
-      "Sim, com restrições (pena de morte em guerra)",
-      "Não",
-      "Apenas para brasileiros"
+      "Direito à saúde",
+      "Direito ao trabalho e à remuneração",
+      "Direito à moradia",
+      "Direito ao lazer"
     ],
     "correta": 1,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
+    "artigo": "CF/88, art. 7º, XXI",
+    "explicacao": "O art. 7º, XXI assegura o aviso prévio proporcional ao tempo de serviço. (contexto similar)",
+    "tema": "direitos sociais"
   },
   {
     "nivel": 1,
-    "texto": "São direitos sociais, exceto:",
+    "texto": "Você foi impedido de votar por não ter o título de eleitor. Qual condição de elegibilidade foi ignorada? (variação)",
     "alternativas": [
-      "Educação",
-      "Saúde",
-      "Lucro empresarial",
-      "Moradia"
-    ],
-    "correta": 2,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A União é dividida em quantos Poderes?",
-    "alternativas": [
-      "Três (Executivo, Legislativo, Judiciário)",
-      "Dois (Executivo e Legislativo)",
-      "Quatro (incluindo o MP)",
-      "Cinco"
+      "Alistamento eleitoral obrigatório após 18 anos",
+      "Idade mínima para votar",
+      "Nacionalidade brasileira",
+      "Não ter condenação criminal"
     ],
     "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
+    "artigo": "CF/88, art. 14, § 1º",
+    "explicacao": "O alistamento eleitoral é obrigatório para maiores de 18 anos e facultativo para 16 e 17. (contexto similar)",
+    "tema": "direitos políticos"
   },
   {
     "nivel": 1,
-    "texto": "São brasileiros natos:",
+    "texto": "A polícia entrou na sua casa sem mandado judicial nem flagrante. Qual direito foi violado? (variação)",
     "alternativas": [
-      "Os nascidos no estrangeiro de pai brasileiro",
-      "Os naturalizados",
-      "Os nascidos no Brasil",
-      "Os que optarem pela nacionalidade"
-    ],
-    "correta": 2,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O voto é obrigatório para maiores de:",
-    "alternativas": [
-      "18 anos",
-      "16 anos",
-      "21 anos",
-      "14 anos"
+      "Direito de propriedade",
+      "Inviolabilidade do domicílio",
+      "Direito à intimidade",
+      "Direito de reunião"
     ],
     "correta": 1,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
+    "artigo": "CF/88, art. 5º, XI",
+    "explicacao": "A casa é asilo inviolável, salvo flagrante delito, desastre ou ordem judicial. (contexto similar)",
     "tema": "direitos individuais"
   },
   {
     "nivel": 1,
-    "texto": "O Congresso Nacional é composto por:",
+    "texto": "Você sofreu ofensas em uma rede social e quer direito de resposta. Em qual artigo da CF isso está previsto? (variação)",
     "alternativas": [
-      "Câmara dos Deputados e Senado Federal",
-      "Apenas Câmara",
-      "Apenas Senado",
-      "Câmara, Senado e Tribunal de Contas"
+      "Art. 5º, V",
+      "Art. 6º",
+      "Art. 14",
+      "Art. 37"
     ],
     "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
+    "artigo": "CF/88, art. 5º, V",
+    "explicacao": "O art. 5º, V assegura direito de resposta proporcional ao agravo. (contexto similar)",
     "tema": "direitos individuais"
   },
   {
     "nivel": 1,
-    "texto": "Compete privativamente ao Presidente da República:",
+    "texto": "Você foi detido pela polícia sem ser informado dos seus direitos. Qual garantia constitucional foi violada? (variação)",
     "alternativas": [
-      "Sancionar leis",
-      "Elaborar emendas constitucionais",
-      "Julgar o Presidente",
-      "Nomear ministros do STF (com aprovação do Senado)"
-    ],
-    "correta": 3,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O STF é composto por quantos ministros?",
-    "alternativas": [
-      "11",
-      "13",
-      "9",
-      "15"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A ação direta de inconstitucionalidade pode ser proposta por:",
-    "alternativas": [
-      "Qualquer cidadão",
-      "Partidos com representação no Congresso",
-      "O Presidente da República",
-      "Todos os anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A competência para instituir impostos é da:",
-    "alternativas": [
-      "União",
-      "Estados",
-      "Municípios",
-      "Distrito Federal"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O direito à vida é garantido pela Constituição?",
-    "alternativas": [
-      "Sim, absoluto",
-      "Sim, com restrições (pena de morte em guerra)",
-      "Não",
-      "Apenas para brasileiros"
+      "Direito à propriedade",
+      "Direito ao silêncio e à assistência de advogado",
+      "Direito de ir e vir",
+      "Direito à educação"
     ],
     "correta": 1,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
+    "artigo": "CF/88, art. 5º, LXIII",
+    "explicacao": "O art. 5º, LXIII garante ao preso o direito de ser informado de seus direitos, incluindo o silêncio e a assistência de advogado. (contexto similar)",
     "tema": "direitos individuais"
   },
   {
     "nivel": 1,
-    "texto": "São direitos sociais, exceto:",
+    "texto": "Você foi demitido e a empresa não pagou o aviso prévio. Qual direito social foi desrespeitado? (variação)",
     "alternativas": [
-      "Educação",
-      "Saúde",
-      "Lucro empresarial",
-      "Moradia"
-    ],
-    "correta": 2,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A União é dividida em quantos Poderes?",
-    "alternativas": [
-      "Três (Executivo, Legislativo, Judiciário)",
-      "Dois (Executivo e Legislativo)",
-      "Quatro (incluindo o MP)",
-      "Cinco"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "São brasileiros natos:",
-    "alternativas": [
-      "Os nascidos no estrangeiro de pai brasileiro",
-      "Os naturalizados",
-      "Os nascidos no Brasil",
-      "Os que optarem pela nacionalidade"
-    ],
-    "correta": 2,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O voto é obrigatório para maiores de:",
-    "alternativas": [
-      "18 anos",
-      "16 anos",
-      "21 anos",
-      "14 anos"
+      "Direito à saúde",
+      "Direito ao trabalho e à remuneração",
+      "Direito à moradia",
+      "Direito ao lazer"
     ],
     "correta": 1,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
+    "artigo": "CF/88, art. 7º, XXI",
+    "explicacao": "O art. 7º, XXI assegura o aviso prévio proporcional ao tempo de serviço. (contexto similar)",
+    "tema": "direitos sociais"
   },
   {
     "nivel": 1,
-    "texto": "O Congresso Nacional é composto por:",
+    "texto": "Você foi impedido de votar por não ter o título de eleitor. Qual condição de elegibilidade foi ignorada? (variação)",
     "alternativas": [
-      "Câmara dos Deputados e Senado Federal",
-      "Apenas Câmara",
-      "Apenas Senado",
-      "Câmara, Senado e Tribunal de Contas"
+      "Alistamento eleitoral obrigatório após 18 anos",
+      "Idade mínima para votar",
+      "Nacionalidade brasileira",
+      "Não ter condenação criminal"
     ],
     "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
+    "artigo": "CF/88, art. 14, § 1º",
+    "explicacao": "O alistamento eleitoral é obrigatório para maiores de 18 anos e facultativo para 16 e 17. (contexto similar)",
+    "tema": "direitos políticos"
   },
   {
     "nivel": 1,
-    "texto": "Compete privativamente ao Presidente da República:",
+    "texto": "A polícia entrou na sua casa sem mandado judicial nem flagrante. Qual direito foi violado? (variação)",
     "alternativas": [
-      "Sancionar leis",
-      "Elaborar emendas constitucionais",
-      "Julgar o Presidente",
-      "Nomear ministros do STF (com aprovação do Senado)"
-    ],
-    "correta": 3,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O STF é composto por quantos ministros?",
-    "alternativas": [
-      "11",
-      "13",
-      "9",
-      "15"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A ação direta de inconstitucionalidade pode ser proposta por:",
-    "alternativas": [
-      "Qualquer cidadão",
-      "Partidos com representação no Congresso",
-      "O Presidente da República",
-      "Todos os anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A competência para instituir impostos é da:",
-    "alternativas": [
-      "União",
-      "Estados",
-      "Municípios",
-      "Distrito Federal"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O direito à vida é garantido pela Constituição?",
-    "alternativas": [
-      "Sim, absoluto",
-      "Sim, com restrições (pena de morte em guerra)",
-      "Não",
-      "Apenas para brasileiros"
+      "Direito de propriedade",
+      "Inviolabilidade do domicílio",
+      "Direito à intimidade",
+      "Direito de reunião"
     ],
     "correta": 1,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
+    "artigo": "CF/88, art. 5º, XI",
+    "explicacao": "A casa é asilo inviolável, salvo flagrante delito, desastre ou ordem judicial. (contexto similar)",
     "tema": "direitos individuais"
   },
   {
     "nivel": 1,
-    "texto": "São direitos sociais, exceto:",
+    "texto": "Você sofreu ofensas em uma rede social e quer direito de resposta. Em qual artigo da CF isso está previsto? (variação)",
     "alternativas": [
-      "Educação",
-      "Saúde",
-      "Lucro empresarial",
-      "Moradia"
-    ],
-    "correta": 2,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A União é dividida em quantos Poderes?",
-    "alternativas": [
-      "Três (Executivo, Legislativo, Judiciário)",
-      "Dois (Executivo e Legislativo)",
-      "Quatro (incluindo o MP)",
-      "Cinco"
+      "Art. 5º, V",
+      "Art. 6º",
+      "Art. 14",
+      "Art. 37"
     ],
     "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
+    "artigo": "CF/88, art. 5º, V",
+    "explicacao": "O art. 5º, V assegura direito de resposta proporcional ao agravo. (contexto similar)",
     "tema": "direitos individuais"
   },
   {
     "nivel": 1,
-    "texto": "São brasileiros natos:",
+    "texto": "Você foi detido pela polícia sem ser informado dos seus direitos. Qual garantia constitucional foi violada? (variação)",
     "alternativas": [
-      "Os nascidos no estrangeiro de pai brasileiro",
-      "Os naturalizados",
-      "Os nascidos no Brasil",
-      "Os que optarem pela nacionalidade"
-    ],
-    "correta": 2,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O voto é obrigatório para maiores de:",
-    "alternativas": [
-      "18 anos",
-      "16 anos",
-      "21 anos",
-      "14 anos"
+      "Direito à propriedade",
+      "Direito ao silêncio e à assistência de advogado",
+      "Direito de ir e vir",
+      "Direito à educação"
     ],
     "correta": 1,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
+    "artigo": "CF/88, art. 5º, LXIII",
+    "explicacao": "O art. 5º, LXIII garante ao preso o direito de ser informado de seus direitos, incluindo o silêncio e a assistência de advogado. (contexto similar)",
     "tema": "direitos individuais"
   },
   {
     "nivel": 1,
-    "texto": "O Congresso Nacional é composto por:",
+    "texto": "Você foi demitido e a empresa não pagou o aviso prévio. Qual direito social foi desrespeitado? (variação)",
     "alternativas": [
-      "Câmara dos Deputados e Senado Federal",
-      "Apenas Câmara",
-      "Apenas Senado",
-      "Câmara, Senado e Tribunal de Contas"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "Compete privativamente ao Presidente da República:",
-    "alternativas": [
-      "Sancionar leis",
-      "Elaborar emendas constitucionais",
-      "Julgar o Presidente",
-      "Nomear ministros do STF (com aprovação do Senado)"
-    ],
-    "correta": 3,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O STF é composto por quantos ministros?",
-    "alternativas": [
-      "11",
-      "13",
-      "9",
-      "15"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A ação direta de inconstitucionalidade pode ser proposta por:",
-    "alternativas": [
-      "Qualquer cidadão",
-      "Partidos com representação no Congresso",
-      "O Presidente da República",
-      "Todos os anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A competência para instituir impostos é da:",
-    "alternativas": [
-      "União",
-      "Estados",
-      "Municípios",
-      "Distrito Federal"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O direito à vida é garantido pela Constituição?",
-    "alternativas": [
-      "Sim, absoluto",
-      "Sim, com restrições (pena de morte em guerra)",
-      "Não",
-      "Apenas para brasileiros"
+      "Direito à saúde",
+      "Direito ao trabalho e à remuneração",
+      "Direito à moradia",
+      "Direito ao lazer"
     ],
     "correta": 1,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
+    "artigo": "CF/88, art. 7º, XXI",
+    "explicacao": "O art. 7º, XXI assegura o aviso prévio proporcional ao tempo de serviço. (contexto similar)",
+    "tema": "direitos sociais"
   },
   {
     "nivel": 1,
-    "texto": "São direitos sociais, exceto:",
+    "texto": "Você foi impedido de votar por não ter o título de eleitor. Qual condição de elegibilidade foi ignorada? (variação)",
     "alternativas": [
-      "Educação",
-      "Saúde",
-      "Lucro empresarial",
-      "Moradia"
-    ],
-    "correta": 2,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A União é dividida em quantos Poderes?",
-    "alternativas": [
-      "Três (Executivo, Legislativo, Judiciário)",
-      "Dois (Executivo e Legislativo)",
-      "Quatro (incluindo o MP)",
-      "Cinco"
+      "Alistamento eleitoral obrigatório após 18 anos",
+      "Idade mínima para votar",
+      "Nacionalidade brasileira",
+      "Não ter condenação criminal"
     ],
     "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
+    "artigo": "CF/88, art. 14, § 1º",
+    "explicacao": "O alistamento eleitoral é obrigatório para maiores de 18 anos e facultativo para 16 e 17. (contexto similar)",
+    "tema": "direitos políticos"
   },
   {
     "nivel": 1,
-    "texto": "São brasileiros natos:",
+    "texto": "A polícia entrou na sua casa sem mandado judicial nem flagrante. Qual direito foi violado? (variação)",
     "alternativas": [
-      "Os nascidos no estrangeiro de pai brasileiro",
-      "Os naturalizados",
-      "Os nascidos no Brasil",
-      "Os que optarem pela nacionalidade"
-    ],
-    "correta": 2,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O voto é obrigatório para maiores de:",
-    "alternativas": [
-      "18 anos",
-      "16 anos",
-      "21 anos",
-      "14 anos"
+      "Direito de propriedade",
+      "Inviolabilidade do domicílio",
+      "Direito à intimidade",
+      "Direito de reunião"
     ],
     "correta": 1,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
+    "artigo": "CF/88, art. 5º, XI",
+    "explicacao": "A casa é asilo inviolável, salvo flagrante delito, desastre ou ordem judicial. (contexto similar)",
     "tema": "direitos individuais"
   },
   {
     "nivel": 1,
-    "texto": "O Congresso Nacional é composto por:",
+    "texto": "Você sofreu ofensas em uma rede social e quer direito de resposta. Em qual artigo da CF isso está previsto? (variação)",
     "alternativas": [
-      "Câmara dos Deputados e Senado Federal",
-      "Apenas Câmara",
-      "Apenas Senado",
-      "Câmara, Senado e Tribunal de Contas"
+      "Art. 5º, V",
+      "Art. 6º",
+      "Art. 14",
+      "Art. 37"
     ],
     "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
+    "artigo": "CF/88, art. 5º, V",
+    "explicacao": "O art. 5º, V assegura direito de resposta proporcional ao agravo. (contexto similar)",
     "tema": "direitos individuais"
   },
   {
     "nivel": 1,
-    "texto": "Compete privativamente ao Presidente da República:",
+    "texto": "Você foi detido pela polícia sem ser informado dos seus direitos. Qual garantia constitucional foi violada? (variação)",
     "alternativas": [
-      "Sancionar leis",
-      "Elaborar emendas constitucionais",
-      "Julgar o Presidente",
-      "Nomear ministros do STF (com aprovação do Senado)"
-    ],
-    "correta": 3,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O STF é composto por quantos ministros?",
-    "alternativas": [
-      "11",
-      "13",
-      "9",
-      "15"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A ação direta de inconstitucionalidade pode ser proposta por:",
-    "alternativas": [
-      "Qualquer cidadão",
-      "Partidos com representação no Congresso",
-      "O Presidente da República",
-      "Todos os anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A competência para instituir impostos é da:",
-    "alternativas": [
-      "União",
-      "Estados",
-      "Municípios",
-      "Distrito Federal"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O direito à vida é garantido pela Constituição?",
-    "alternativas": [
-      "Sim, absoluto",
-      "Sim, com restrições (pena de morte em guerra)",
-      "Não",
-      "Apenas para brasileiros"
+      "Direito à propriedade",
+      "Direito ao silêncio e à assistência de advogado",
+      "Direito de ir e vir",
+      "Direito à educação"
     ],
     "correta": 1,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
+    "artigo": "CF/88, art. 5º, LXIII",
+    "explicacao": "O art. 5º, LXIII garante ao preso o direito de ser informado de seus direitos, incluindo o silêncio e a assistência de advogado. (contexto similar)",
     "tema": "direitos individuais"
   },
   {
     "nivel": 1,
-    "texto": "São direitos sociais, exceto:",
+    "texto": "Você foi demitido e a empresa não pagou o aviso prévio. Qual direito social foi desrespeitado? (variação)",
     "alternativas": [
-      "Educação",
-      "Saúde",
-      "Lucro empresarial",
-      "Moradia"
-    ],
-    "correta": 2,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A União é dividida em quantos Poderes?",
-    "alternativas": [
-      "Três (Executivo, Legislativo, Judiciário)",
-      "Dois (Executivo e Legislativo)",
-      "Quatro (incluindo o MP)",
-      "Cinco"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "São brasileiros natos:",
-    "alternativas": [
-      "Os nascidos no estrangeiro de pai brasileiro",
-      "Os naturalizados",
-      "Os nascidos no Brasil",
-      "Os que optarem pela nacionalidade"
-    ],
-    "correta": 2,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "O voto é obrigatório para maiores de:",
-    "alternativas": [
-      "18 anos",
-      "16 anos",
-      "21 anos",
-      "14 anos"
+      "Direito à saúde",
+      "Direito ao trabalho e à remuneração",
+      "Direito à moradia",
+      "Direito ao lazer"
     ],
     "correta": 1,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
+    "artigo": "CF/88, art. 7º, XXI",
+    "explicacao": "O art. 7º, XXI assegura o aviso prévio proporcional ao tempo de serviço. (contexto similar)",
+    "tema": "direitos sociais"
   },
   {
     "nivel": 1,
-    "texto": "O Congresso Nacional é composto por:",
+    "texto": "Você foi impedido de votar por não ter o título de eleitor. Qual condição de elegibilidade foi ignorada? (variação)",
     "alternativas": [
-      "Câmara dos Deputados e Senado Federal",
-      "Apenas Câmara",
-      "Apenas Senado",
-      "Câmara, Senado e Tribunal de Contas"
+      "Alistamento eleitoral obrigatório após 18 anos",
+      "Idade mínima para votar",
+      "Nacionalidade brasileira",
+      "Não ter condenação criminal"
     ],
     "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
+    "artigo": "CF/88, art. 14, § 1º",
+    "explicacao": "O alistamento eleitoral é obrigatório para maiores de 18 anos e facultativo para 16 e 17. (contexto similar)",
+    "tema": "direitos políticos"
   },
   {
     "nivel": 1,
-    "texto": "Compete privativamente ao Presidente da República:",
+    "texto": "A polícia entrou na sua casa sem mandado judicial nem flagrante. Qual direito foi violado? (variação)",
     "alternativas": [
-      "Sancionar leis",
-      "Elaborar emendas constitucionais",
-      "Julgar o Presidente",
-      "Nomear ministros do STF (com aprovação do Senado)"
+      "Direito de propriedade",
+      "Inviolabilidade do domicílio",
+      "Direito à intimidade",
+      "Direito de reunião"
     ],
-    "correta": 3,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, XI",
+    "explicacao": "A casa é asilo inviolável, salvo flagrante delito, desastre ou ordem judicial. (contexto similar)",
     "tema": "direitos individuais"
   },
   {
     "nivel": 1,
-    "texto": "O STF é composto por quantos ministros?",
+    "texto": "Você sofreu ofensas em uma rede social e quer direito de resposta. Em qual artigo da CF isso está previsto? (variação)",
     "alternativas": [
-      "11",
-      "13",
-      "9",
-      "15"
-    ],
-    "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A ação direta de inconstitucionalidade pode ser proposta por:",
-    "alternativas": [
-      "Qualquer cidadão",
-      "Partidos com representação no Congresso",
-      "O Presidente da República",
-      "Todos os anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
-    "tema": "direitos individuais"
-  },
-  {
-    "nivel": 1,
-    "texto": "A competência para instituir impostos é da:",
-    "alternativas": [
-      "União",
-      "Estados",
-      "Municípios",
-      "Distrito Federal"
+      "Art. 5º, V",
+      "Art. 6º",
+      "Art. 14",
+      "Art. 37"
     ],
     "correta": 0,
-    "artigo": "CF/88",
-    "explicacao": "Esta questão aborda direitos individuais. CF/88 prevê as regras correspondentes.",
+    "artigo": "CF/88, art. 5º, V",
+    "explicacao": "O art. 5º, V assegura direito de resposta proporcional ao agravo. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi detido pela polícia sem ser informado dos seus direitos. Qual garantia constitucional foi violada? (variação)",
+    "alternativas": [
+      "Direito à propriedade",
+      "Direito ao silêncio e à assistência de advogado",
+      "Direito de ir e vir",
+      "Direito à educação"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, LXIII",
+    "explicacao": "O art. 5º, LXIII garante ao preso o direito de ser informado de seus direitos, incluindo o silêncio e a assistência de advogado. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi demitido e a empresa não pagou o aviso prévio. Qual direito social foi desrespeitado? (variação)",
+    "alternativas": [
+      "Direito à saúde",
+      "Direito ao trabalho e à remuneração",
+      "Direito à moradia",
+      "Direito ao lazer"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 7º, XXI",
+    "explicacao": "O art. 7º, XXI assegura o aviso prévio proporcional ao tempo de serviço. (contexto similar)",
+    "tema": "direitos sociais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi impedido de votar por não ter o título de eleitor. Qual condição de elegibilidade foi ignorada? (variação)",
+    "alternativas": [
+      "Alistamento eleitoral obrigatório após 18 anos",
+      "Idade mínima para votar",
+      "Nacionalidade brasileira",
+      "Não ter condenação criminal"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 14, § 1º",
+    "explicacao": "O alistamento eleitoral é obrigatório para maiores de 18 anos e facultativo para 16 e 17. (contexto similar)",
+    "tema": "direitos políticos"
+  },
+  {
+    "nivel": 1,
+    "texto": "A polícia entrou na sua casa sem mandado judicial nem flagrante. Qual direito foi violado? (variação)",
+    "alternativas": [
+      "Direito de propriedade",
+      "Inviolabilidade do domicílio",
+      "Direito à intimidade",
+      "Direito de reunião"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, XI",
+    "explicacao": "A casa é asilo inviolável, salvo flagrante delito, desastre ou ordem judicial. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você sofreu ofensas em uma rede social e quer direito de resposta. Em qual artigo da CF isso está previsto? (variação)",
+    "alternativas": [
+      "Art. 5º, V",
+      "Art. 6º",
+      "Art. 14",
+      "Art. 37"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 5º, V",
+    "explicacao": "O art. 5º, V assegura direito de resposta proporcional ao agravo. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi detido pela polícia sem ser informado dos seus direitos. Qual garantia constitucional foi violada? (variação)",
+    "alternativas": [
+      "Direito à propriedade",
+      "Direito ao silêncio e à assistência de advogado",
+      "Direito de ir e vir",
+      "Direito à educação"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, LXIII",
+    "explicacao": "O art. 5º, LXIII garante ao preso o direito de ser informado de seus direitos, incluindo o silêncio e a assistência de advogado. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi demitido e a empresa não pagou o aviso prévio. Qual direito social foi desrespeitado? (variação)",
+    "alternativas": [
+      "Direito à saúde",
+      "Direito ao trabalho e à remuneração",
+      "Direito à moradia",
+      "Direito ao lazer"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 7º, XXI",
+    "explicacao": "O art. 7º, XXI assegura o aviso prévio proporcional ao tempo de serviço. (contexto similar)",
+    "tema": "direitos sociais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi impedido de votar por não ter o título de eleitor. Qual condição de elegibilidade foi ignorada? (variação)",
+    "alternativas": [
+      "Alistamento eleitoral obrigatório após 18 anos",
+      "Idade mínima para votar",
+      "Nacionalidade brasileira",
+      "Não ter condenação criminal"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 14, § 1º",
+    "explicacao": "O alistamento eleitoral é obrigatório para maiores de 18 anos e facultativo para 16 e 17. (contexto similar)",
+    "tema": "direitos políticos"
+  },
+  {
+    "nivel": 1,
+    "texto": "A polícia entrou na sua casa sem mandado judicial nem flagrante. Qual direito foi violado? (variação)",
+    "alternativas": [
+      "Direito de propriedade",
+      "Inviolabilidade do domicílio",
+      "Direito à intimidade",
+      "Direito de reunião"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, XI",
+    "explicacao": "A casa é asilo inviolável, salvo flagrante delito, desastre ou ordem judicial. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você sofreu ofensas em uma rede social e quer direito de resposta. Em qual artigo da CF isso está previsto? (variação)",
+    "alternativas": [
+      "Art. 5º, V",
+      "Art. 6º",
+      "Art. 14",
+      "Art. 37"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 5º, V",
+    "explicacao": "O art. 5º, V assegura direito de resposta proporcional ao agravo. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi detido pela polícia sem ser informado dos seus direitos. Qual garantia constitucional foi violada? (variação)",
+    "alternativas": [
+      "Direito à propriedade",
+      "Direito ao silêncio e à assistência de advogado",
+      "Direito de ir e vir",
+      "Direito à educação"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, LXIII",
+    "explicacao": "O art. 5º, LXIII garante ao preso o direito de ser informado de seus direitos, incluindo o silêncio e a assistência de advogado. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi demitido e a empresa não pagou o aviso prévio. Qual direito social foi desrespeitado? (variação)",
+    "alternativas": [
+      "Direito à saúde",
+      "Direito ao trabalho e à remuneração",
+      "Direito à moradia",
+      "Direito ao lazer"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 7º, XXI",
+    "explicacao": "O art. 7º, XXI assegura o aviso prévio proporcional ao tempo de serviço. (contexto similar)",
+    "tema": "direitos sociais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi impedido de votar por não ter o título de eleitor. Qual condição de elegibilidade foi ignorada? (variação)",
+    "alternativas": [
+      "Alistamento eleitoral obrigatório após 18 anos",
+      "Idade mínima para votar",
+      "Nacionalidade brasileira",
+      "Não ter condenação criminal"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 14, § 1º",
+    "explicacao": "O alistamento eleitoral é obrigatório para maiores de 18 anos e facultativo para 16 e 17. (contexto similar)",
+    "tema": "direitos políticos"
+  },
+  {
+    "nivel": 1,
+    "texto": "A polícia entrou na sua casa sem mandado judicial nem flagrante. Qual direito foi violado? (variação)",
+    "alternativas": [
+      "Direito de propriedade",
+      "Inviolabilidade do domicílio",
+      "Direito à intimidade",
+      "Direito de reunião"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, XI",
+    "explicacao": "A casa é asilo inviolável, salvo flagrante delito, desastre ou ordem judicial. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você sofreu ofensas em uma rede social e quer direito de resposta. Em qual artigo da CF isso está previsto? (variação)",
+    "alternativas": [
+      "Art. 5º, V",
+      "Art. 6º",
+      "Art. 14",
+      "Art. 37"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 5º, V",
+    "explicacao": "O art. 5º, V assegura direito de resposta proporcional ao agravo. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi detido pela polícia sem ser informado dos seus direitos. Qual garantia constitucional foi violada? (variação)",
+    "alternativas": [
+      "Direito à propriedade",
+      "Direito ao silêncio e à assistência de advogado",
+      "Direito de ir e vir",
+      "Direito à educação"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, LXIII",
+    "explicacao": "O art. 5º, LXIII garante ao preso o direito de ser informado de seus direitos, incluindo o silêncio e a assistência de advogado. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi demitido e a empresa não pagou o aviso prévio. Qual direito social foi desrespeitado? (variação)",
+    "alternativas": [
+      "Direito à saúde",
+      "Direito ao trabalho e à remuneração",
+      "Direito à moradia",
+      "Direito ao lazer"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 7º, XXI",
+    "explicacao": "O art. 7º, XXI assegura o aviso prévio proporcional ao tempo de serviço. (contexto similar)",
+    "tema": "direitos sociais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi impedido de votar por não ter o título de eleitor. Qual condição de elegibilidade foi ignorada? (variação)",
+    "alternativas": [
+      "Alistamento eleitoral obrigatório após 18 anos",
+      "Idade mínima para votar",
+      "Nacionalidade brasileira",
+      "Não ter condenação criminal"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 14, § 1º",
+    "explicacao": "O alistamento eleitoral é obrigatório para maiores de 18 anos e facultativo para 16 e 17. (contexto similar)",
+    "tema": "direitos políticos"
+  },
+  {
+    "nivel": 1,
+    "texto": "A polícia entrou na sua casa sem mandado judicial nem flagrante. Qual direito foi violado? (variação)",
+    "alternativas": [
+      "Direito de propriedade",
+      "Inviolabilidade do domicílio",
+      "Direito à intimidade",
+      "Direito de reunião"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, XI",
+    "explicacao": "A casa é asilo inviolável, salvo flagrante delito, desastre ou ordem judicial. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você sofreu ofensas em uma rede social e quer direito de resposta. Em qual artigo da CF isso está previsto? (variação)",
+    "alternativas": [
+      "Art. 5º, V",
+      "Art. 6º",
+      "Art. 14",
+      "Art. 37"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 5º, V",
+    "explicacao": "O art. 5º, V assegura direito de resposta proporcional ao agravo. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi detido pela polícia sem ser informado dos seus direitos. Qual garantia constitucional foi violada? (variação)",
+    "alternativas": [
+      "Direito à propriedade",
+      "Direito ao silêncio e à assistência de advogado",
+      "Direito de ir e vir",
+      "Direito à educação"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, LXIII",
+    "explicacao": "O art. 5º, LXIII garante ao preso o direito de ser informado de seus direitos, incluindo o silêncio e a assistência de advogado. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi demitido e a empresa não pagou o aviso prévio. Qual direito social foi desrespeitado? (variação)",
+    "alternativas": [
+      "Direito à saúde",
+      "Direito ao trabalho e à remuneração",
+      "Direito à moradia",
+      "Direito ao lazer"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 7º, XXI",
+    "explicacao": "O art. 7º, XXI assegura o aviso prévio proporcional ao tempo de serviço. (contexto similar)",
+    "tema": "direitos sociais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi impedido de votar por não ter o título de eleitor. Qual condição de elegibilidade foi ignorada? (variação)",
+    "alternativas": [
+      "Alistamento eleitoral obrigatório após 18 anos",
+      "Idade mínima para votar",
+      "Nacionalidade brasileira",
+      "Não ter condenação criminal"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 14, § 1º",
+    "explicacao": "O alistamento eleitoral é obrigatório para maiores de 18 anos e facultativo para 16 e 17. (contexto similar)",
+    "tema": "direitos políticos"
+  },
+  {
+    "nivel": 1,
+    "texto": "A polícia entrou na sua casa sem mandado judicial nem flagrante. Qual direito foi violado? (variação)",
+    "alternativas": [
+      "Direito de propriedade",
+      "Inviolabilidade do domicílio",
+      "Direito à intimidade",
+      "Direito de reunião"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, XI",
+    "explicacao": "A casa é asilo inviolável, salvo flagrante delito, desastre ou ordem judicial. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você sofreu ofensas em uma rede social e quer direito de resposta. Em qual artigo da CF isso está previsto? (variação)",
+    "alternativas": [
+      "Art. 5º, V",
+      "Art. 6º",
+      "Art. 14",
+      "Art. 37"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 5º, V",
+    "explicacao": "O art. 5º, V assegura direito de resposta proporcional ao agravo. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi detido pela polícia sem ser informado dos seus direitos. Qual garantia constitucional foi violada? (variação)",
+    "alternativas": [
+      "Direito à propriedade",
+      "Direito ao silêncio e à assistência de advogado",
+      "Direito de ir e vir",
+      "Direito à educação"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, LXIII",
+    "explicacao": "O art. 5º, LXIII garante ao preso o direito de ser informado de seus direitos, incluindo o silêncio e a assistência de advogado. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi demitido e a empresa não pagou o aviso prévio. Qual direito social foi desrespeitado? (variação)",
+    "alternativas": [
+      "Direito à saúde",
+      "Direito ao trabalho e à remuneração",
+      "Direito à moradia",
+      "Direito ao lazer"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 7º, XXI",
+    "explicacao": "O art. 7º, XXI assegura o aviso prévio proporcional ao tempo de serviço. (contexto similar)",
+    "tema": "direitos sociais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi impedido de votar por não ter o título de eleitor. Qual condição de elegibilidade foi ignorada? (variação)",
+    "alternativas": [
+      "Alistamento eleitoral obrigatório após 18 anos",
+      "Idade mínima para votar",
+      "Nacionalidade brasileira",
+      "Não ter condenação criminal"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 14, § 1º",
+    "explicacao": "O alistamento eleitoral é obrigatório para maiores de 18 anos e facultativo para 16 e 17. (contexto similar)",
+    "tema": "direitos políticos"
+  },
+  {
+    "nivel": 1,
+    "texto": "A polícia entrou na sua casa sem mandado judicial nem flagrante. Qual direito foi violado? (variação)",
+    "alternativas": [
+      "Direito de propriedade",
+      "Inviolabilidade do domicílio",
+      "Direito à intimidade",
+      "Direito de reunião"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, XI",
+    "explicacao": "A casa é asilo inviolável, salvo flagrante delito, desastre ou ordem judicial. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você sofreu ofensas em uma rede social e quer direito de resposta. Em qual artigo da CF isso está previsto? (variação)",
+    "alternativas": [
+      "Art. 5º, V",
+      "Art. 6º",
+      "Art. 14",
+      "Art. 37"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 5º, V",
+    "explicacao": "O art. 5º, V assegura direito de resposta proporcional ao agravo. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi detido pela polícia sem ser informado dos seus direitos. Qual garantia constitucional foi violada? (variação)",
+    "alternativas": [
+      "Direito à propriedade",
+      "Direito ao silêncio e à assistência de advogado",
+      "Direito de ir e vir",
+      "Direito à educação"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, LXIII",
+    "explicacao": "O art. 5º, LXIII garante ao preso o direito de ser informado de seus direitos, incluindo o silêncio e a assistência de advogado. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi demitido e a empresa não pagou o aviso prévio. Qual direito social foi desrespeitado? (variação)",
+    "alternativas": [
+      "Direito à saúde",
+      "Direito ao trabalho e à remuneração",
+      "Direito à moradia",
+      "Direito ao lazer"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 7º, XXI",
+    "explicacao": "O art. 7º, XXI assegura o aviso prévio proporcional ao tempo de serviço. (contexto similar)",
+    "tema": "direitos sociais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi impedido de votar por não ter o título de eleitor. Qual condição de elegibilidade foi ignorada? (variação)",
+    "alternativas": [
+      "Alistamento eleitoral obrigatório após 18 anos",
+      "Idade mínima para votar",
+      "Nacionalidade brasileira",
+      "Não ter condenação criminal"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 14, § 1º",
+    "explicacao": "O alistamento eleitoral é obrigatório para maiores de 18 anos e facultativo para 16 e 17. (contexto similar)",
+    "tema": "direitos políticos"
+  },
+  {
+    "nivel": 1,
+    "texto": "A polícia entrou na sua casa sem mandado judicial nem flagrante. Qual direito foi violado? (variação)",
+    "alternativas": [
+      "Direito de propriedade",
+      "Inviolabilidade do domicílio",
+      "Direito à intimidade",
+      "Direito de reunião"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, XI",
+    "explicacao": "A casa é asilo inviolável, salvo flagrante delito, desastre ou ordem judicial. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você sofreu ofensas em uma rede social e quer direito de resposta. Em qual artigo da CF isso está previsto? (variação)",
+    "alternativas": [
+      "Art. 5º, V",
+      "Art. 6º",
+      "Art. 14",
+      "Art. 37"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 5º, V",
+    "explicacao": "O art. 5º, V assegura direito de resposta proporcional ao agravo. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi detido pela polícia sem ser informado dos seus direitos. Qual garantia constitucional foi violada? (variação)",
+    "alternativas": [
+      "Direito à propriedade",
+      "Direito ao silêncio e à assistência de advogado",
+      "Direito de ir e vir",
+      "Direito à educação"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, LXIII",
+    "explicacao": "O art. 5º, LXIII garante ao preso o direito de ser informado de seus direitos, incluindo o silêncio e a assistência de advogado. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi demitido e a empresa não pagou o aviso prévio. Qual direito social foi desrespeitado? (variação)",
+    "alternativas": [
+      "Direito à saúde",
+      "Direito ao trabalho e à remuneração",
+      "Direito à moradia",
+      "Direito ao lazer"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 7º, XXI",
+    "explicacao": "O art. 7º, XXI assegura o aviso prévio proporcional ao tempo de serviço. (contexto similar)",
+    "tema": "direitos sociais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi impedido de votar por não ter o título de eleitor. Qual condição de elegibilidade foi ignorada? (variação)",
+    "alternativas": [
+      "Alistamento eleitoral obrigatório após 18 anos",
+      "Idade mínima para votar",
+      "Nacionalidade brasileira",
+      "Não ter condenação criminal"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 14, § 1º",
+    "explicacao": "O alistamento eleitoral é obrigatório para maiores de 18 anos e facultativo para 16 e 17. (contexto similar)",
+    "tema": "direitos políticos"
+  },
+  {
+    "nivel": 1,
+    "texto": "A polícia entrou na sua casa sem mandado judicial nem flagrante. Qual direito foi violado? (variação)",
+    "alternativas": [
+      "Direito de propriedade",
+      "Inviolabilidade do domicílio",
+      "Direito à intimidade",
+      "Direito de reunião"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, XI",
+    "explicacao": "A casa é asilo inviolável, salvo flagrante delito, desastre ou ordem judicial. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você sofreu ofensas em uma rede social e quer direito de resposta. Em qual artigo da CF isso está previsto? (variação)",
+    "alternativas": [
+      "Art. 5º, V",
+      "Art. 6º",
+      "Art. 14",
+      "Art. 37"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 5º, V",
+    "explicacao": "O art. 5º, V assegura direito de resposta proporcional ao agravo. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi detido pela polícia sem ser informado dos seus direitos. Qual garantia constitucional foi violada? (variação)",
+    "alternativas": [
+      "Direito à propriedade",
+      "Direito ao silêncio e à assistência de advogado",
+      "Direito de ir e vir",
+      "Direito à educação"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, LXIII",
+    "explicacao": "O art. 5º, LXIII garante ao preso o direito de ser informado de seus direitos, incluindo o silêncio e a assistência de advogado. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi demitido e a empresa não pagou o aviso prévio. Qual direito social foi desrespeitado? (variação)",
+    "alternativas": [
+      "Direito à saúde",
+      "Direito ao trabalho e à remuneração",
+      "Direito à moradia",
+      "Direito ao lazer"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 7º, XXI",
+    "explicacao": "O art. 7º, XXI assegura o aviso prévio proporcional ao tempo de serviço. (contexto similar)",
+    "tema": "direitos sociais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você foi impedido de votar por não ter o título de eleitor. Qual condição de elegibilidade foi ignorada? (variação)",
+    "alternativas": [
+      "Alistamento eleitoral obrigatório após 18 anos",
+      "Idade mínima para votar",
+      "Nacionalidade brasileira",
+      "Não ter condenação criminal"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 14, § 1º",
+    "explicacao": "O alistamento eleitoral é obrigatório para maiores de 18 anos e facultativo para 16 e 17. (contexto similar)",
+    "tema": "direitos políticos"
+  },
+  {
+    "nivel": 1,
+    "texto": "A polícia entrou na sua casa sem mandado judicial nem flagrante. Qual direito foi violado? (variação)",
+    "alternativas": [
+      "Direito de propriedade",
+      "Inviolabilidade do domicílio",
+      "Direito à intimidade",
+      "Direito de reunião"
+    ],
+    "correta": 1,
+    "artigo": "CF/88, art. 5º, XI",
+    "explicacao": "A casa é asilo inviolável, salvo flagrante delito, desastre ou ordem judicial. (contexto similar)",
+    "tema": "direitos individuais"
+  },
+  {
+    "nivel": 1,
+    "texto": "Você sofreu ofensas em uma rede social e quer direito de resposta. Em qual artigo da CF isso está previsto? (variação)",
+    "alternativas": [
+      "Art. 5º, V",
+      "Art. 6º",
+      "Art. 14",
+      "Art. 37"
+    ],
+    "correta": 0,
+    "artigo": "CF/88, art. 5º, V",
+    "explicacao": "O art. 5º, V assegura direito de resposta proporcional ao agravo. (contexto similar)",
     "tema": "direitos individuais"
   },
   {
     "nivel": 2,
-    "texto": "O prazo para reclamação de vício aparente em produto durável é de:",
+    "texto": "Você comprou um fone de ouvido pela internet e após 80 dias ele parou de funcionar. A loja se recusa a trocar. Qual o prazo legal para reclamar de vício em produto durável?",
     "alternativas": [
       "30 dias",
       "90 dias",
@@ -989,97 +989,97 @@ const bancoPerguntas = [
       "1 ano"
     ],
     "correta": 1,
-    "artigo": "CDC, Lei correspondente",
-    "explicacao": "De acordo com a CDC, 90 dias é a alternativa correta.",
+    "artigo": "CDC, art. 26, I",
+    "explicacao": "Produtos duráveis têm prazo de 90 dias para reclamação de vício aparente.",
     "tema": "consumidor"
   },
   {
     "nivel": 2,
-    "texto": "A medida socioeducativa para adolescente que pratica ato infracional pode ser:",
+    "texto": "Um adolescente de 15 anos é flagrado pichando um muro. Qual medida socioeducativa pode ser aplicada?",
     "alternativas": [
       "Advertência",
-      "Prestação de serviços",
+      "Prestação de serviços à comunidade",
       "Liberdade assistida",
       "Todas as anteriores"
     ],
     "correta": 3,
-    "artigo": "ECA, Lei correspondente",
-    "explicacao": "De acordo com a ECA, todas as anteriores é a alternativa correta.",
-    "tema": "ECA"
+    "artigo": "ECA, art. 112",
+    "explicacao": "O ECA prevê advertência, prestação de serviços, liberdade assistida, entre outras.",
+    "tema": "eca"
   },
   {
     "nivel": 2,
-    "texto": "O aviso prévio proporcional ao tempo de serviço tem no mínimo:",
+    "texto": "Você foi demitido sem justa causa após 3 anos na empresa. Quantos dias de aviso prévio você tem direito?",
     "alternativas": [
       "30 dias",
       "33 dias",
-      "90 dias",
-      "60 dias"
-    ],
-    "correta": 0,
-    "artigo": "CLT, Lei correspondente",
-    "explicacao": "De acordo com a CLT, 30 dias é a alternativa correta.",
-    "tema": "CLT"
-  },
-  {
-    "nivel": 2,
-    "texto": "A petição inicial será indeferida quando:",
-    "alternativas": [
-      "Inepta",
-      "Faltar pedido",
-      "Manifestamente improcedente",
-      "Todas as anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CPC, Lei correspondente",
-    "explicacao": "De acordo com a CPC, todas as anteriores é a alternativa correta.",
-    "tema": "CPC"
-  },
-  {
-    "nivel": 2,
-    "texto": "A prisão preventiva pode ser decretada para garantir:",
-    "alternativas": [
-      "Ordem econômica",
-      "Instrução criminal",
-      "Saúde do preso",
-      "Pagamento de multa"
+      "39 dias",
+      "90 dias"
     ],
     "correta": 1,
-    "artigo": "CPP, Lei correspondente",
-    "explicacao": "De acordo com a CPP, instrução criminal é a alternativa correta.",
-    "tema": "CPP"
+    "artigo": "CLT, art. 487, §1º",
+    "explicacao": "30 dias + 3 dias por ano trabalhado (máximo 90).",
+    "tema": "trabalho"
   },
   {
     "nivel": 2,
-    "texto": "Dirigir sob influência de álcool é considerado:",
+    "texto": "Você moveu uma ação judicial, mas o juiz indeferiu sua petição inicial por ela ser inepta. O que isso significa?",
     "alternativas": [
-      "Crime",
-      "Contravenção",
-      "Infração administrativa",
-      "Apenas multa"
+      "Faltava endereço do autor",
+      "A petição não atendia aos requisitos do art. 319 do CPC",
+      "O autor não tinha capacidade de postular",
+      "O valor da causa era irrisório"
     ],
-    "correta": 0,
-    "artigo": "CTB, Lei correspondente",
-    "explicacao": "De acordo com a CTB, crime é a alternativa correta.",
-    "tema": "CTB"
+    "correta": 1,
+    "artigo": "CPC, art. 330, I",
+    "explicacao": "A petição inicial é inepta quando não preenche os requisitos legais.",
+    "tema": "processo civil"
   },
   {
     "nivel": 2,
-    "texto": "O tratamento de dados pessoais deve ser baseado em:",
+    "texto": "Você foi preso em flagrante. O juiz pode converter sua prisão em preventiva?",
     "alternativas": [
+      "Sim, sempre",
+      "Não, flagrante só cabe relaxamento",
+      "Sim, se presentes os requisitos do art. 312 do CPP",
+      "Não, pois flagrante é obrigatório"
+    ],
+    "correta": 2,
+    "artigo": "CPP, art. 312",
+    "explicacao": "A preventiva pode ser decretada se houver garantia da ordem pública, instrução criminal ou aplicação da lei penal.",
+    "tema": "processo penal"
+  },
+  {
+    "nivel": 2,
+    "texto": "Você foi multado por dirigir sob influência de álcool. Qual a penalidade prevista no CTB?",
+    "alternativas": [
+      "Apenas multa",
+      "Multa e suspensão do direito de dirigir por 12 meses",
+      "Detenção de 6 meses a 3 anos",
+      "Advertência por escrito"
+    ],
+    "correta": 1,
+    "artigo": "CTB, art. 165",
+    "explicacao": "Infração gravíssima: multa (10 vezes) e suspensão de 12 meses.",
+    "tema": "trânsito"
+  },
+  {
+    "nivel": 2,
+    "texto": "Uma empresa compartilhou seus dados pessoais sem sua autorização. Qual direito da LGPD foi violado?",
+    "alternativas": [
+      "Direito à portabilidade",
+      "Direito à exclusão dos dados",
       "Consentimento do titular",
-      "Interesse legítimo",
-      "Cumprimento de obrigação legal",
-      "Todos os anteriores"
+      "Direito de acesso"
     ],
-    "correta": 3,
-    "artigo": "LGPD, Lei correspondente",
-    "explicacao": "De acordo com a LGPD, todos os anteriores é a alternativa correta.",
-    "tema": "LGPD"
+    "correta": 2,
+    "artigo": "LGPD, art. 7º",
+    "explicacao": "O tratamento de dados pessoais exige base legal, sendo o consentimento uma delas.",
+    "tema": "lgpd"
   },
   {
     "nivel": 2,
-    "texto": "O prazo para reclamação de vício aparente em produto durável é de:",
+    "texto": "Você comprou um fone de ouvido pela internet e após 80 dias ele parou de funcionar. A loja se recusa a trocar. Qual o prazo legal para reclamar de vício em produto durável? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "90 dias",
@@ -1087,97 +1087,97 @@ const bancoPerguntas = [
       "1 ano"
     ],
     "correta": 1,
-    "artigo": "CDC, Lei correspondente",
-    "explicacao": "De acordo com a CDC, 90 dias é a alternativa correta.",
+    "artigo": "CDC, art. 26, I",
+    "explicacao": "Produtos duráveis têm prazo de 90 dias para reclamação de vício aparente. (situação análoga)",
     "tema": "consumidor"
   },
   {
     "nivel": 2,
-    "texto": "A medida socioeducativa para adolescente que pratica ato infracional pode ser:",
+    "texto": "Um adolescente de 15 anos é flagrado pichando um muro. Qual medida socioeducativa pode ser aplicada? (exemplo adicional)",
     "alternativas": [
       "Advertência",
-      "Prestação de serviços",
+      "Prestação de serviços à comunidade",
       "Liberdade assistida",
       "Todas as anteriores"
     ],
     "correta": 3,
-    "artigo": "ECA, Lei correspondente",
-    "explicacao": "De acordo com a ECA, todas as anteriores é a alternativa correta.",
-    "tema": "ECA"
+    "artigo": "ECA, art. 112",
+    "explicacao": "O ECA prevê advertência, prestação de serviços, liberdade assistida, entre outras. (situação análoga)",
+    "tema": "eca"
   },
   {
     "nivel": 2,
-    "texto": "O aviso prévio proporcional ao tempo de serviço tem no mínimo:",
+    "texto": "Você foi demitido sem justa causa após 3 anos na empresa. Quantos dias de aviso prévio você tem direito? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "33 dias",
-      "90 dias",
-      "60 dias"
-    ],
-    "correta": 0,
-    "artigo": "CLT, Lei correspondente",
-    "explicacao": "De acordo com a CLT, 30 dias é a alternativa correta.",
-    "tema": "CLT"
-  },
-  {
-    "nivel": 2,
-    "texto": "A petição inicial será indeferida quando:",
-    "alternativas": [
-      "Inepta",
-      "Faltar pedido",
-      "Manifestamente improcedente",
-      "Todas as anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CPC, Lei correspondente",
-    "explicacao": "De acordo com a CPC, todas as anteriores é a alternativa correta.",
-    "tema": "CPC"
-  },
-  {
-    "nivel": 2,
-    "texto": "A prisão preventiva pode ser decretada para garantir:",
-    "alternativas": [
-      "Ordem econômica",
-      "Instrução criminal",
-      "Saúde do preso",
-      "Pagamento de multa"
+      "39 dias",
+      "90 dias"
     ],
     "correta": 1,
-    "artigo": "CPP, Lei correspondente",
-    "explicacao": "De acordo com a CPP, instrução criminal é a alternativa correta.",
-    "tema": "CPP"
+    "artigo": "CLT, art. 487, §1º",
+    "explicacao": "30 dias + 3 dias por ano trabalhado (máximo 90). (situação análoga)",
+    "tema": "trabalho"
   },
   {
     "nivel": 2,
-    "texto": "Dirigir sob influência de álcool é considerado:",
+    "texto": "Você moveu uma ação judicial, mas o juiz indeferiu sua petição inicial por ela ser inepta. O que isso significa? (exemplo adicional)",
     "alternativas": [
-      "Crime",
-      "Contravenção",
-      "Infração administrativa",
-      "Apenas multa"
+      "Faltava endereço do autor",
+      "A petição não atendia aos requisitos do art. 319 do CPC",
+      "O autor não tinha capacidade de postular",
+      "O valor da causa era irrisório"
     ],
-    "correta": 0,
-    "artigo": "CTB, Lei correspondente",
-    "explicacao": "De acordo com a CTB, crime é a alternativa correta.",
-    "tema": "CTB"
+    "correta": 1,
+    "artigo": "CPC, art. 330, I",
+    "explicacao": "A petição inicial é inepta quando não preenche os requisitos legais. (situação análoga)",
+    "tema": "processo civil"
   },
   {
     "nivel": 2,
-    "texto": "O tratamento de dados pessoais deve ser baseado em:",
+    "texto": "Você foi preso em flagrante. O juiz pode converter sua prisão em preventiva? (exemplo adicional)",
     "alternativas": [
+      "Sim, sempre",
+      "Não, flagrante só cabe relaxamento",
+      "Sim, se presentes os requisitos do art. 312 do CPP",
+      "Não, pois flagrante é obrigatório"
+    ],
+    "correta": 2,
+    "artigo": "CPP, art. 312",
+    "explicacao": "A preventiva pode ser decretada se houver garantia da ordem pública, instrução criminal ou aplicação da lei penal. (situação análoga)",
+    "tema": "processo penal"
+  },
+  {
+    "nivel": 2,
+    "texto": "Você foi multado por dirigir sob influência de álcool. Qual a penalidade prevista no CTB? (exemplo adicional)",
+    "alternativas": [
+      "Apenas multa",
+      "Multa e suspensão do direito de dirigir por 12 meses",
+      "Detenção de 6 meses a 3 anos",
+      "Advertência por escrito"
+    ],
+    "correta": 1,
+    "artigo": "CTB, art. 165",
+    "explicacao": "Infração gravíssima: multa (10 vezes) e suspensão de 12 meses. (situação análoga)",
+    "tema": "trânsito"
+  },
+  {
+    "nivel": 2,
+    "texto": "Uma empresa compartilhou seus dados pessoais sem sua autorização. Qual direito da LGPD foi violado? (exemplo adicional)",
+    "alternativas": [
+      "Direito à portabilidade",
+      "Direito à exclusão dos dados",
       "Consentimento do titular",
-      "Interesse legítimo",
-      "Cumprimento de obrigação legal",
-      "Todos os anteriores"
+      "Direito de acesso"
     ],
-    "correta": 3,
-    "artigo": "LGPD, Lei correspondente",
-    "explicacao": "De acordo com a LGPD, todos os anteriores é a alternativa correta.",
-    "tema": "LGPD"
+    "correta": 2,
+    "artigo": "LGPD, art. 7º",
+    "explicacao": "O tratamento de dados pessoais exige base legal, sendo o consentimento uma delas. (situação análoga)",
+    "tema": "lgpd"
   },
   {
     "nivel": 2,
-    "texto": "O prazo para reclamação de vício aparente em produto durável é de:",
+    "texto": "Você comprou um fone de ouvido pela internet e após 80 dias ele parou de funcionar. A loja se recusa a trocar. Qual o prazo legal para reclamar de vício em produto durável? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "90 dias",
@@ -1185,97 +1185,97 @@ const bancoPerguntas = [
       "1 ano"
     ],
     "correta": 1,
-    "artigo": "CDC, Lei correspondente",
-    "explicacao": "De acordo com a CDC, 90 dias é a alternativa correta.",
+    "artigo": "CDC, art. 26, I",
+    "explicacao": "Produtos duráveis têm prazo de 90 dias para reclamação de vício aparente. (situação análoga)",
     "tema": "consumidor"
   },
   {
     "nivel": 2,
-    "texto": "A medida socioeducativa para adolescente que pratica ato infracional pode ser:",
+    "texto": "Um adolescente de 15 anos é flagrado pichando um muro. Qual medida socioeducativa pode ser aplicada? (exemplo adicional)",
     "alternativas": [
       "Advertência",
-      "Prestação de serviços",
+      "Prestação de serviços à comunidade",
       "Liberdade assistida",
       "Todas as anteriores"
     ],
     "correta": 3,
-    "artigo": "ECA, Lei correspondente",
-    "explicacao": "De acordo com a ECA, todas as anteriores é a alternativa correta.",
-    "tema": "ECA"
+    "artigo": "ECA, art. 112",
+    "explicacao": "O ECA prevê advertência, prestação de serviços, liberdade assistida, entre outras. (situação análoga)",
+    "tema": "eca"
   },
   {
     "nivel": 2,
-    "texto": "O aviso prévio proporcional ao tempo de serviço tem no mínimo:",
+    "texto": "Você foi demitido sem justa causa após 3 anos na empresa. Quantos dias de aviso prévio você tem direito? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "33 dias",
-      "90 dias",
-      "60 dias"
-    ],
-    "correta": 0,
-    "artigo": "CLT, Lei correspondente",
-    "explicacao": "De acordo com a CLT, 30 dias é a alternativa correta.",
-    "tema": "CLT"
-  },
-  {
-    "nivel": 2,
-    "texto": "A petição inicial será indeferida quando:",
-    "alternativas": [
-      "Inepta",
-      "Faltar pedido",
-      "Manifestamente improcedente",
-      "Todas as anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CPC, Lei correspondente",
-    "explicacao": "De acordo com a CPC, todas as anteriores é a alternativa correta.",
-    "tema": "CPC"
-  },
-  {
-    "nivel": 2,
-    "texto": "A prisão preventiva pode ser decretada para garantir:",
-    "alternativas": [
-      "Ordem econômica",
-      "Instrução criminal",
-      "Saúde do preso",
-      "Pagamento de multa"
+      "39 dias",
+      "90 dias"
     ],
     "correta": 1,
-    "artigo": "CPP, Lei correspondente",
-    "explicacao": "De acordo com a CPP, instrução criminal é a alternativa correta.",
-    "tema": "CPP"
+    "artigo": "CLT, art. 487, §1º",
+    "explicacao": "30 dias + 3 dias por ano trabalhado (máximo 90). (situação análoga)",
+    "tema": "trabalho"
   },
   {
     "nivel": 2,
-    "texto": "Dirigir sob influência de álcool é considerado:",
+    "texto": "Você moveu uma ação judicial, mas o juiz indeferiu sua petição inicial por ela ser inepta. O que isso significa? (exemplo adicional)",
     "alternativas": [
-      "Crime",
-      "Contravenção",
-      "Infração administrativa",
-      "Apenas multa"
+      "Faltava endereço do autor",
+      "A petição não atendia aos requisitos do art. 319 do CPC",
+      "O autor não tinha capacidade de postular",
+      "O valor da causa era irrisório"
     ],
-    "correta": 0,
-    "artigo": "CTB, Lei correspondente",
-    "explicacao": "De acordo com a CTB, crime é a alternativa correta.",
-    "tema": "CTB"
+    "correta": 1,
+    "artigo": "CPC, art. 330, I",
+    "explicacao": "A petição inicial é inepta quando não preenche os requisitos legais. (situação análoga)",
+    "tema": "processo civil"
   },
   {
     "nivel": 2,
-    "texto": "O tratamento de dados pessoais deve ser baseado em:",
+    "texto": "Você foi preso em flagrante. O juiz pode converter sua prisão em preventiva? (exemplo adicional)",
     "alternativas": [
+      "Sim, sempre",
+      "Não, flagrante só cabe relaxamento",
+      "Sim, se presentes os requisitos do art. 312 do CPP",
+      "Não, pois flagrante é obrigatório"
+    ],
+    "correta": 2,
+    "artigo": "CPP, art. 312",
+    "explicacao": "A preventiva pode ser decretada se houver garantia da ordem pública, instrução criminal ou aplicação da lei penal. (situação análoga)",
+    "tema": "processo penal"
+  },
+  {
+    "nivel": 2,
+    "texto": "Você foi multado por dirigir sob influência de álcool. Qual a penalidade prevista no CTB? (exemplo adicional)",
+    "alternativas": [
+      "Apenas multa",
+      "Multa e suspensão do direito de dirigir por 12 meses",
+      "Detenção de 6 meses a 3 anos",
+      "Advertência por escrito"
+    ],
+    "correta": 1,
+    "artigo": "CTB, art. 165",
+    "explicacao": "Infração gravíssima: multa (10 vezes) e suspensão de 12 meses. (situação análoga)",
+    "tema": "trânsito"
+  },
+  {
+    "nivel": 2,
+    "texto": "Uma empresa compartilhou seus dados pessoais sem sua autorização. Qual direito da LGPD foi violado? (exemplo adicional)",
+    "alternativas": [
+      "Direito à portabilidade",
+      "Direito à exclusão dos dados",
       "Consentimento do titular",
-      "Interesse legítimo",
-      "Cumprimento de obrigação legal",
-      "Todos os anteriores"
+      "Direito de acesso"
     ],
-    "correta": 3,
-    "artigo": "LGPD, Lei correspondente",
-    "explicacao": "De acordo com a LGPD, todos os anteriores é a alternativa correta.",
-    "tema": "LGPD"
+    "correta": 2,
+    "artigo": "LGPD, art. 7º",
+    "explicacao": "O tratamento de dados pessoais exige base legal, sendo o consentimento uma delas. (situação análoga)",
+    "tema": "lgpd"
   },
   {
     "nivel": 2,
-    "texto": "O prazo para reclamação de vício aparente em produto durável é de:",
+    "texto": "Você comprou um fone de ouvido pela internet e após 80 dias ele parou de funcionar. A loja se recusa a trocar. Qual o prazo legal para reclamar de vício em produto durável? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "90 dias",
@@ -1283,97 +1283,97 @@ const bancoPerguntas = [
       "1 ano"
     ],
     "correta": 1,
-    "artigo": "CDC, Lei correspondente",
-    "explicacao": "De acordo com a CDC, 90 dias é a alternativa correta.",
+    "artigo": "CDC, art. 26, I",
+    "explicacao": "Produtos duráveis têm prazo de 90 dias para reclamação de vício aparente. (situação análoga)",
     "tema": "consumidor"
   },
   {
     "nivel": 2,
-    "texto": "A medida socioeducativa para adolescente que pratica ato infracional pode ser:",
+    "texto": "Um adolescente de 15 anos é flagrado pichando um muro. Qual medida socioeducativa pode ser aplicada? (exemplo adicional)",
     "alternativas": [
       "Advertência",
-      "Prestação de serviços",
+      "Prestação de serviços à comunidade",
       "Liberdade assistida",
       "Todas as anteriores"
     ],
     "correta": 3,
-    "artigo": "ECA, Lei correspondente",
-    "explicacao": "De acordo com a ECA, todas as anteriores é a alternativa correta.",
-    "tema": "ECA"
+    "artigo": "ECA, art. 112",
+    "explicacao": "O ECA prevê advertência, prestação de serviços, liberdade assistida, entre outras. (situação análoga)",
+    "tema": "eca"
   },
   {
     "nivel": 2,
-    "texto": "O aviso prévio proporcional ao tempo de serviço tem no mínimo:",
+    "texto": "Você foi demitido sem justa causa após 3 anos na empresa. Quantos dias de aviso prévio você tem direito? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "33 dias",
-      "90 dias",
-      "60 dias"
-    ],
-    "correta": 0,
-    "artigo": "CLT, Lei correspondente",
-    "explicacao": "De acordo com a CLT, 30 dias é a alternativa correta.",
-    "tema": "CLT"
-  },
-  {
-    "nivel": 2,
-    "texto": "A petição inicial será indeferida quando:",
-    "alternativas": [
-      "Inepta",
-      "Faltar pedido",
-      "Manifestamente improcedente",
-      "Todas as anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CPC, Lei correspondente",
-    "explicacao": "De acordo com a CPC, todas as anteriores é a alternativa correta.",
-    "tema": "CPC"
-  },
-  {
-    "nivel": 2,
-    "texto": "A prisão preventiva pode ser decretada para garantir:",
-    "alternativas": [
-      "Ordem econômica",
-      "Instrução criminal",
-      "Saúde do preso",
-      "Pagamento de multa"
+      "39 dias",
+      "90 dias"
     ],
     "correta": 1,
-    "artigo": "CPP, Lei correspondente",
-    "explicacao": "De acordo com a CPP, instrução criminal é a alternativa correta.",
-    "tema": "CPP"
+    "artigo": "CLT, art. 487, §1º",
+    "explicacao": "30 dias + 3 dias por ano trabalhado (máximo 90). (situação análoga)",
+    "tema": "trabalho"
   },
   {
     "nivel": 2,
-    "texto": "Dirigir sob influência de álcool é considerado:",
+    "texto": "Você moveu uma ação judicial, mas o juiz indeferiu sua petição inicial por ela ser inepta. O que isso significa? (exemplo adicional)",
     "alternativas": [
-      "Crime",
-      "Contravenção",
-      "Infração administrativa",
-      "Apenas multa"
+      "Faltava endereço do autor",
+      "A petição não atendia aos requisitos do art. 319 do CPC",
+      "O autor não tinha capacidade de postular",
+      "O valor da causa era irrisório"
     ],
-    "correta": 0,
-    "artigo": "CTB, Lei correspondente",
-    "explicacao": "De acordo com a CTB, crime é a alternativa correta.",
-    "tema": "CTB"
+    "correta": 1,
+    "artigo": "CPC, art. 330, I",
+    "explicacao": "A petição inicial é inepta quando não preenche os requisitos legais. (situação análoga)",
+    "tema": "processo civil"
   },
   {
     "nivel": 2,
-    "texto": "O tratamento de dados pessoais deve ser baseado em:",
+    "texto": "Você foi preso em flagrante. O juiz pode converter sua prisão em preventiva? (exemplo adicional)",
     "alternativas": [
+      "Sim, sempre",
+      "Não, flagrante só cabe relaxamento",
+      "Sim, se presentes os requisitos do art. 312 do CPP",
+      "Não, pois flagrante é obrigatório"
+    ],
+    "correta": 2,
+    "artigo": "CPP, art. 312",
+    "explicacao": "A preventiva pode ser decretada se houver garantia da ordem pública, instrução criminal ou aplicação da lei penal. (situação análoga)",
+    "tema": "processo penal"
+  },
+  {
+    "nivel": 2,
+    "texto": "Você foi multado por dirigir sob influência de álcool. Qual a penalidade prevista no CTB? (exemplo adicional)",
+    "alternativas": [
+      "Apenas multa",
+      "Multa e suspensão do direito de dirigir por 12 meses",
+      "Detenção de 6 meses a 3 anos",
+      "Advertência por escrito"
+    ],
+    "correta": 1,
+    "artigo": "CTB, art. 165",
+    "explicacao": "Infração gravíssima: multa (10 vezes) e suspensão de 12 meses. (situação análoga)",
+    "tema": "trânsito"
+  },
+  {
+    "nivel": 2,
+    "texto": "Uma empresa compartilhou seus dados pessoais sem sua autorização. Qual direito da LGPD foi violado? (exemplo adicional)",
+    "alternativas": [
+      "Direito à portabilidade",
+      "Direito à exclusão dos dados",
       "Consentimento do titular",
-      "Interesse legítimo",
-      "Cumprimento de obrigação legal",
-      "Todos os anteriores"
+      "Direito de acesso"
     ],
-    "correta": 3,
-    "artigo": "LGPD, Lei correspondente",
-    "explicacao": "De acordo com a LGPD, todos os anteriores é a alternativa correta.",
-    "tema": "LGPD"
+    "correta": 2,
+    "artigo": "LGPD, art. 7º",
+    "explicacao": "O tratamento de dados pessoais exige base legal, sendo o consentimento uma delas. (situação análoga)",
+    "tema": "lgpd"
   },
   {
     "nivel": 2,
-    "texto": "O prazo para reclamação de vício aparente em produto durável é de:",
+    "texto": "Você comprou um fone de ouvido pela internet e após 80 dias ele parou de funcionar. A loja se recusa a trocar. Qual o prazo legal para reclamar de vício em produto durável? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "90 dias",
@@ -1381,97 +1381,97 @@ const bancoPerguntas = [
       "1 ano"
     ],
     "correta": 1,
-    "artigo": "CDC, Lei correspondente",
-    "explicacao": "De acordo com a CDC, 90 dias é a alternativa correta.",
+    "artigo": "CDC, art. 26, I",
+    "explicacao": "Produtos duráveis têm prazo de 90 dias para reclamação de vício aparente. (situação análoga)",
     "tema": "consumidor"
   },
   {
     "nivel": 2,
-    "texto": "A medida socioeducativa para adolescente que pratica ato infracional pode ser:",
+    "texto": "Um adolescente de 15 anos é flagrado pichando um muro. Qual medida socioeducativa pode ser aplicada? (exemplo adicional)",
     "alternativas": [
       "Advertência",
-      "Prestação de serviços",
+      "Prestação de serviços à comunidade",
       "Liberdade assistida",
       "Todas as anteriores"
     ],
     "correta": 3,
-    "artigo": "ECA, Lei correspondente",
-    "explicacao": "De acordo com a ECA, todas as anteriores é a alternativa correta.",
-    "tema": "ECA"
+    "artigo": "ECA, art. 112",
+    "explicacao": "O ECA prevê advertência, prestação de serviços, liberdade assistida, entre outras. (situação análoga)",
+    "tema": "eca"
   },
   {
     "nivel": 2,
-    "texto": "O aviso prévio proporcional ao tempo de serviço tem no mínimo:",
+    "texto": "Você foi demitido sem justa causa após 3 anos na empresa. Quantos dias de aviso prévio você tem direito? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "33 dias",
-      "90 dias",
-      "60 dias"
-    ],
-    "correta": 0,
-    "artigo": "CLT, Lei correspondente",
-    "explicacao": "De acordo com a CLT, 30 dias é a alternativa correta.",
-    "tema": "CLT"
-  },
-  {
-    "nivel": 2,
-    "texto": "A petição inicial será indeferida quando:",
-    "alternativas": [
-      "Inepta",
-      "Faltar pedido",
-      "Manifestamente improcedente",
-      "Todas as anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CPC, Lei correspondente",
-    "explicacao": "De acordo com a CPC, todas as anteriores é a alternativa correta.",
-    "tema": "CPC"
-  },
-  {
-    "nivel": 2,
-    "texto": "A prisão preventiva pode ser decretada para garantir:",
-    "alternativas": [
-      "Ordem econômica",
-      "Instrução criminal",
-      "Saúde do preso",
-      "Pagamento de multa"
+      "39 dias",
+      "90 dias"
     ],
     "correta": 1,
-    "artigo": "CPP, Lei correspondente",
-    "explicacao": "De acordo com a CPP, instrução criminal é a alternativa correta.",
-    "tema": "CPP"
+    "artigo": "CLT, art. 487, §1º",
+    "explicacao": "30 dias + 3 dias por ano trabalhado (máximo 90). (situação análoga)",
+    "tema": "trabalho"
   },
   {
     "nivel": 2,
-    "texto": "Dirigir sob influência de álcool é considerado:",
+    "texto": "Você moveu uma ação judicial, mas o juiz indeferiu sua petição inicial por ela ser inepta. O que isso significa? (exemplo adicional)",
     "alternativas": [
-      "Crime",
-      "Contravenção",
-      "Infração administrativa",
-      "Apenas multa"
+      "Faltava endereço do autor",
+      "A petição não atendia aos requisitos do art. 319 do CPC",
+      "O autor não tinha capacidade de postular",
+      "O valor da causa era irrisório"
     ],
-    "correta": 0,
-    "artigo": "CTB, Lei correspondente",
-    "explicacao": "De acordo com a CTB, crime é a alternativa correta.",
-    "tema": "CTB"
+    "correta": 1,
+    "artigo": "CPC, art. 330, I",
+    "explicacao": "A petição inicial é inepta quando não preenche os requisitos legais. (situação análoga)",
+    "tema": "processo civil"
   },
   {
     "nivel": 2,
-    "texto": "O tratamento de dados pessoais deve ser baseado em:",
+    "texto": "Você foi preso em flagrante. O juiz pode converter sua prisão em preventiva? (exemplo adicional)",
     "alternativas": [
+      "Sim, sempre",
+      "Não, flagrante só cabe relaxamento",
+      "Sim, se presentes os requisitos do art. 312 do CPP",
+      "Não, pois flagrante é obrigatório"
+    ],
+    "correta": 2,
+    "artigo": "CPP, art. 312",
+    "explicacao": "A preventiva pode ser decretada se houver garantia da ordem pública, instrução criminal ou aplicação da lei penal. (situação análoga)",
+    "tema": "processo penal"
+  },
+  {
+    "nivel": 2,
+    "texto": "Você foi multado por dirigir sob influência de álcool. Qual a penalidade prevista no CTB? (exemplo adicional)",
+    "alternativas": [
+      "Apenas multa",
+      "Multa e suspensão do direito de dirigir por 12 meses",
+      "Detenção de 6 meses a 3 anos",
+      "Advertência por escrito"
+    ],
+    "correta": 1,
+    "artigo": "CTB, art. 165",
+    "explicacao": "Infração gravíssima: multa (10 vezes) e suspensão de 12 meses. (situação análoga)",
+    "tema": "trânsito"
+  },
+  {
+    "nivel": 2,
+    "texto": "Uma empresa compartilhou seus dados pessoais sem sua autorização. Qual direito da LGPD foi violado? (exemplo adicional)",
+    "alternativas": [
+      "Direito à portabilidade",
+      "Direito à exclusão dos dados",
       "Consentimento do titular",
-      "Interesse legítimo",
-      "Cumprimento de obrigação legal",
-      "Todos os anteriores"
+      "Direito de acesso"
     ],
-    "correta": 3,
-    "artigo": "LGPD, Lei correspondente",
-    "explicacao": "De acordo com a LGPD, todos os anteriores é a alternativa correta.",
-    "tema": "LGPD"
+    "correta": 2,
+    "artigo": "LGPD, art. 7º",
+    "explicacao": "O tratamento de dados pessoais exige base legal, sendo o consentimento uma delas. (situação análoga)",
+    "tema": "lgpd"
   },
   {
     "nivel": 2,
-    "texto": "O prazo para reclamação de vício aparente em produto durável é de:",
+    "texto": "Você comprou um fone de ouvido pela internet e após 80 dias ele parou de funcionar. A loja se recusa a trocar. Qual o prazo legal para reclamar de vício em produto durável? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "90 dias",
@@ -1479,97 +1479,97 @@ const bancoPerguntas = [
       "1 ano"
     ],
     "correta": 1,
-    "artigo": "CDC, Lei correspondente",
-    "explicacao": "De acordo com a CDC, 90 dias é a alternativa correta.",
+    "artigo": "CDC, art. 26, I",
+    "explicacao": "Produtos duráveis têm prazo de 90 dias para reclamação de vício aparente. (situação análoga)",
     "tema": "consumidor"
   },
   {
     "nivel": 2,
-    "texto": "A medida socioeducativa para adolescente que pratica ato infracional pode ser:",
+    "texto": "Um adolescente de 15 anos é flagrado pichando um muro. Qual medida socioeducativa pode ser aplicada? (exemplo adicional)",
     "alternativas": [
       "Advertência",
-      "Prestação de serviços",
+      "Prestação de serviços à comunidade",
       "Liberdade assistida",
       "Todas as anteriores"
     ],
     "correta": 3,
-    "artigo": "ECA, Lei correspondente",
-    "explicacao": "De acordo com a ECA, todas as anteriores é a alternativa correta.",
-    "tema": "ECA"
+    "artigo": "ECA, art. 112",
+    "explicacao": "O ECA prevê advertência, prestação de serviços, liberdade assistida, entre outras. (situação análoga)",
+    "tema": "eca"
   },
   {
     "nivel": 2,
-    "texto": "O aviso prévio proporcional ao tempo de serviço tem no mínimo:",
+    "texto": "Você foi demitido sem justa causa após 3 anos na empresa. Quantos dias de aviso prévio você tem direito? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "33 dias",
-      "90 dias",
-      "60 dias"
-    ],
-    "correta": 0,
-    "artigo": "CLT, Lei correspondente",
-    "explicacao": "De acordo com a CLT, 30 dias é a alternativa correta.",
-    "tema": "CLT"
-  },
-  {
-    "nivel": 2,
-    "texto": "A petição inicial será indeferida quando:",
-    "alternativas": [
-      "Inepta",
-      "Faltar pedido",
-      "Manifestamente improcedente",
-      "Todas as anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CPC, Lei correspondente",
-    "explicacao": "De acordo com a CPC, todas as anteriores é a alternativa correta.",
-    "tema": "CPC"
-  },
-  {
-    "nivel": 2,
-    "texto": "A prisão preventiva pode ser decretada para garantir:",
-    "alternativas": [
-      "Ordem econômica",
-      "Instrução criminal",
-      "Saúde do preso",
-      "Pagamento de multa"
+      "39 dias",
+      "90 dias"
     ],
     "correta": 1,
-    "artigo": "CPP, Lei correspondente",
-    "explicacao": "De acordo com a CPP, instrução criminal é a alternativa correta.",
-    "tema": "CPP"
+    "artigo": "CLT, art. 487, §1º",
+    "explicacao": "30 dias + 3 dias por ano trabalhado (máximo 90). (situação análoga)",
+    "tema": "trabalho"
   },
   {
     "nivel": 2,
-    "texto": "Dirigir sob influência de álcool é considerado:",
+    "texto": "Você moveu uma ação judicial, mas o juiz indeferiu sua petição inicial por ela ser inepta. O que isso significa? (exemplo adicional)",
     "alternativas": [
-      "Crime",
-      "Contravenção",
-      "Infração administrativa",
-      "Apenas multa"
+      "Faltava endereço do autor",
+      "A petição não atendia aos requisitos do art. 319 do CPC",
+      "O autor não tinha capacidade de postular",
+      "O valor da causa era irrisório"
     ],
-    "correta": 0,
-    "artigo": "CTB, Lei correspondente",
-    "explicacao": "De acordo com a CTB, crime é a alternativa correta.",
-    "tema": "CTB"
+    "correta": 1,
+    "artigo": "CPC, art. 330, I",
+    "explicacao": "A petição inicial é inepta quando não preenche os requisitos legais. (situação análoga)",
+    "tema": "processo civil"
   },
   {
     "nivel": 2,
-    "texto": "O tratamento de dados pessoais deve ser baseado em:",
+    "texto": "Você foi preso em flagrante. O juiz pode converter sua prisão em preventiva? (exemplo adicional)",
     "alternativas": [
+      "Sim, sempre",
+      "Não, flagrante só cabe relaxamento",
+      "Sim, se presentes os requisitos do art. 312 do CPP",
+      "Não, pois flagrante é obrigatório"
+    ],
+    "correta": 2,
+    "artigo": "CPP, art. 312",
+    "explicacao": "A preventiva pode ser decretada se houver garantia da ordem pública, instrução criminal ou aplicação da lei penal. (situação análoga)",
+    "tema": "processo penal"
+  },
+  {
+    "nivel": 2,
+    "texto": "Você foi multado por dirigir sob influência de álcool. Qual a penalidade prevista no CTB? (exemplo adicional)",
+    "alternativas": [
+      "Apenas multa",
+      "Multa e suspensão do direito de dirigir por 12 meses",
+      "Detenção de 6 meses a 3 anos",
+      "Advertência por escrito"
+    ],
+    "correta": 1,
+    "artigo": "CTB, art. 165",
+    "explicacao": "Infração gravíssima: multa (10 vezes) e suspensão de 12 meses. (situação análoga)",
+    "tema": "trânsito"
+  },
+  {
+    "nivel": 2,
+    "texto": "Uma empresa compartilhou seus dados pessoais sem sua autorização. Qual direito da LGPD foi violado? (exemplo adicional)",
+    "alternativas": [
+      "Direito à portabilidade",
+      "Direito à exclusão dos dados",
       "Consentimento do titular",
-      "Interesse legítimo",
-      "Cumprimento de obrigação legal",
-      "Todos os anteriores"
+      "Direito de acesso"
     ],
-    "correta": 3,
-    "artigo": "LGPD, Lei correspondente",
-    "explicacao": "De acordo com a LGPD, todos os anteriores é a alternativa correta.",
-    "tema": "LGPD"
+    "correta": 2,
+    "artigo": "LGPD, art. 7º",
+    "explicacao": "O tratamento de dados pessoais exige base legal, sendo o consentimento uma delas. (situação análoga)",
+    "tema": "lgpd"
   },
   {
     "nivel": 2,
-    "texto": "O prazo para reclamação de vício aparente em produto durável é de:",
+    "texto": "Você comprou um fone de ouvido pela internet e após 80 dias ele parou de funcionar. A loja se recusa a trocar. Qual o prazo legal para reclamar de vício em produto durável? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "90 dias",
@@ -1577,97 +1577,97 @@ const bancoPerguntas = [
       "1 ano"
     ],
     "correta": 1,
-    "artigo": "CDC, Lei correspondente",
-    "explicacao": "De acordo com a CDC, 90 dias é a alternativa correta.",
+    "artigo": "CDC, art. 26, I",
+    "explicacao": "Produtos duráveis têm prazo de 90 dias para reclamação de vício aparente. (situação análoga)",
     "tema": "consumidor"
   },
   {
     "nivel": 2,
-    "texto": "A medida socioeducativa para adolescente que pratica ato infracional pode ser:",
+    "texto": "Um adolescente de 15 anos é flagrado pichando um muro. Qual medida socioeducativa pode ser aplicada? (exemplo adicional)",
     "alternativas": [
       "Advertência",
-      "Prestação de serviços",
+      "Prestação de serviços à comunidade",
       "Liberdade assistida",
       "Todas as anteriores"
     ],
     "correta": 3,
-    "artigo": "ECA, Lei correspondente",
-    "explicacao": "De acordo com a ECA, todas as anteriores é a alternativa correta.",
-    "tema": "ECA"
+    "artigo": "ECA, art. 112",
+    "explicacao": "O ECA prevê advertência, prestação de serviços, liberdade assistida, entre outras. (situação análoga)",
+    "tema": "eca"
   },
   {
     "nivel": 2,
-    "texto": "O aviso prévio proporcional ao tempo de serviço tem no mínimo:",
+    "texto": "Você foi demitido sem justa causa após 3 anos na empresa. Quantos dias de aviso prévio você tem direito? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "33 dias",
-      "90 dias",
-      "60 dias"
-    ],
-    "correta": 0,
-    "artigo": "CLT, Lei correspondente",
-    "explicacao": "De acordo com a CLT, 30 dias é a alternativa correta.",
-    "tema": "CLT"
-  },
-  {
-    "nivel": 2,
-    "texto": "A petição inicial será indeferida quando:",
-    "alternativas": [
-      "Inepta",
-      "Faltar pedido",
-      "Manifestamente improcedente",
-      "Todas as anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CPC, Lei correspondente",
-    "explicacao": "De acordo com a CPC, todas as anteriores é a alternativa correta.",
-    "tema": "CPC"
-  },
-  {
-    "nivel": 2,
-    "texto": "A prisão preventiva pode ser decretada para garantir:",
-    "alternativas": [
-      "Ordem econômica",
-      "Instrução criminal",
-      "Saúde do preso",
-      "Pagamento de multa"
+      "39 dias",
+      "90 dias"
     ],
     "correta": 1,
-    "artigo": "CPP, Lei correspondente",
-    "explicacao": "De acordo com a CPP, instrução criminal é a alternativa correta.",
-    "tema": "CPP"
+    "artigo": "CLT, art. 487, §1º",
+    "explicacao": "30 dias + 3 dias por ano trabalhado (máximo 90). (situação análoga)",
+    "tema": "trabalho"
   },
   {
     "nivel": 2,
-    "texto": "Dirigir sob influência de álcool é considerado:",
+    "texto": "Você moveu uma ação judicial, mas o juiz indeferiu sua petição inicial por ela ser inepta. O que isso significa? (exemplo adicional)",
     "alternativas": [
-      "Crime",
-      "Contravenção",
-      "Infração administrativa",
-      "Apenas multa"
+      "Faltava endereço do autor",
+      "A petição não atendia aos requisitos do art. 319 do CPC",
+      "O autor não tinha capacidade de postular",
+      "O valor da causa era irrisório"
     ],
-    "correta": 0,
-    "artigo": "CTB, Lei correspondente",
-    "explicacao": "De acordo com a CTB, crime é a alternativa correta.",
-    "tema": "CTB"
+    "correta": 1,
+    "artigo": "CPC, art. 330, I",
+    "explicacao": "A petição inicial é inepta quando não preenche os requisitos legais. (situação análoga)",
+    "tema": "processo civil"
   },
   {
     "nivel": 2,
-    "texto": "O tratamento de dados pessoais deve ser baseado em:",
+    "texto": "Você foi preso em flagrante. O juiz pode converter sua prisão em preventiva? (exemplo adicional)",
     "alternativas": [
+      "Sim, sempre",
+      "Não, flagrante só cabe relaxamento",
+      "Sim, se presentes os requisitos do art. 312 do CPP",
+      "Não, pois flagrante é obrigatório"
+    ],
+    "correta": 2,
+    "artigo": "CPP, art. 312",
+    "explicacao": "A preventiva pode ser decretada se houver garantia da ordem pública, instrução criminal ou aplicação da lei penal. (situação análoga)",
+    "tema": "processo penal"
+  },
+  {
+    "nivel": 2,
+    "texto": "Você foi multado por dirigir sob influência de álcool. Qual a penalidade prevista no CTB? (exemplo adicional)",
+    "alternativas": [
+      "Apenas multa",
+      "Multa e suspensão do direito de dirigir por 12 meses",
+      "Detenção de 6 meses a 3 anos",
+      "Advertência por escrito"
+    ],
+    "correta": 1,
+    "artigo": "CTB, art. 165",
+    "explicacao": "Infração gravíssima: multa (10 vezes) e suspensão de 12 meses. (situação análoga)",
+    "tema": "trânsito"
+  },
+  {
+    "nivel": 2,
+    "texto": "Uma empresa compartilhou seus dados pessoais sem sua autorização. Qual direito da LGPD foi violado? (exemplo adicional)",
+    "alternativas": [
+      "Direito à portabilidade",
+      "Direito à exclusão dos dados",
       "Consentimento do titular",
-      "Interesse legítimo",
-      "Cumprimento de obrigação legal",
-      "Todos os anteriores"
+      "Direito de acesso"
     ],
-    "correta": 3,
-    "artigo": "LGPD, Lei correspondente",
-    "explicacao": "De acordo com a LGPD, todos os anteriores é a alternativa correta.",
-    "tema": "LGPD"
+    "correta": 2,
+    "artigo": "LGPD, art. 7º",
+    "explicacao": "O tratamento de dados pessoais exige base legal, sendo o consentimento uma delas. (situação análoga)",
+    "tema": "lgpd"
   },
   {
     "nivel": 2,
-    "texto": "O prazo para reclamação de vício aparente em produto durável é de:",
+    "texto": "Você comprou um fone de ouvido pela internet e após 80 dias ele parou de funcionar. A loja se recusa a trocar. Qual o prazo legal para reclamar de vício em produto durável? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "90 dias",
@@ -1675,97 +1675,97 @@ const bancoPerguntas = [
       "1 ano"
     ],
     "correta": 1,
-    "artigo": "CDC, Lei correspondente",
-    "explicacao": "De acordo com a CDC, 90 dias é a alternativa correta.",
+    "artigo": "CDC, art. 26, I",
+    "explicacao": "Produtos duráveis têm prazo de 90 dias para reclamação de vício aparente. (situação análoga)",
     "tema": "consumidor"
   },
   {
     "nivel": 2,
-    "texto": "A medida socioeducativa para adolescente que pratica ato infracional pode ser:",
+    "texto": "Um adolescente de 15 anos é flagrado pichando um muro. Qual medida socioeducativa pode ser aplicada? (exemplo adicional)",
     "alternativas": [
       "Advertência",
-      "Prestação de serviços",
+      "Prestação de serviços à comunidade",
       "Liberdade assistida",
       "Todas as anteriores"
     ],
     "correta": 3,
-    "artigo": "ECA, Lei correspondente",
-    "explicacao": "De acordo com a ECA, todas as anteriores é a alternativa correta.",
-    "tema": "ECA"
+    "artigo": "ECA, art. 112",
+    "explicacao": "O ECA prevê advertência, prestação de serviços, liberdade assistida, entre outras. (situação análoga)",
+    "tema": "eca"
   },
   {
     "nivel": 2,
-    "texto": "O aviso prévio proporcional ao tempo de serviço tem no mínimo:",
+    "texto": "Você foi demitido sem justa causa após 3 anos na empresa. Quantos dias de aviso prévio você tem direito? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "33 dias",
-      "90 dias",
-      "60 dias"
-    ],
-    "correta": 0,
-    "artigo": "CLT, Lei correspondente",
-    "explicacao": "De acordo com a CLT, 30 dias é a alternativa correta.",
-    "tema": "CLT"
-  },
-  {
-    "nivel": 2,
-    "texto": "A petição inicial será indeferida quando:",
-    "alternativas": [
-      "Inepta",
-      "Faltar pedido",
-      "Manifestamente improcedente",
-      "Todas as anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CPC, Lei correspondente",
-    "explicacao": "De acordo com a CPC, todas as anteriores é a alternativa correta.",
-    "tema": "CPC"
-  },
-  {
-    "nivel": 2,
-    "texto": "A prisão preventiva pode ser decretada para garantir:",
-    "alternativas": [
-      "Ordem econômica",
-      "Instrução criminal",
-      "Saúde do preso",
-      "Pagamento de multa"
+      "39 dias",
+      "90 dias"
     ],
     "correta": 1,
-    "artigo": "CPP, Lei correspondente",
-    "explicacao": "De acordo com a CPP, instrução criminal é a alternativa correta.",
-    "tema": "CPP"
+    "artigo": "CLT, art. 487, §1º",
+    "explicacao": "30 dias + 3 dias por ano trabalhado (máximo 90). (situação análoga)",
+    "tema": "trabalho"
   },
   {
     "nivel": 2,
-    "texto": "Dirigir sob influência de álcool é considerado:",
+    "texto": "Você moveu uma ação judicial, mas o juiz indeferiu sua petição inicial por ela ser inepta. O que isso significa? (exemplo adicional)",
     "alternativas": [
-      "Crime",
-      "Contravenção",
-      "Infração administrativa",
-      "Apenas multa"
+      "Faltava endereço do autor",
+      "A petição não atendia aos requisitos do art. 319 do CPC",
+      "O autor não tinha capacidade de postular",
+      "O valor da causa era irrisório"
     ],
-    "correta": 0,
-    "artigo": "CTB, Lei correspondente",
-    "explicacao": "De acordo com a CTB, crime é a alternativa correta.",
-    "tema": "CTB"
+    "correta": 1,
+    "artigo": "CPC, art. 330, I",
+    "explicacao": "A petição inicial é inepta quando não preenche os requisitos legais. (situação análoga)",
+    "tema": "processo civil"
   },
   {
     "nivel": 2,
-    "texto": "O tratamento de dados pessoais deve ser baseado em:",
+    "texto": "Você foi preso em flagrante. O juiz pode converter sua prisão em preventiva? (exemplo adicional)",
     "alternativas": [
+      "Sim, sempre",
+      "Não, flagrante só cabe relaxamento",
+      "Sim, se presentes os requisitos do art. 312 do CPP",
+      "Não, pois flagrante é obrigatório"
+    ],
+    "correta": 2,
+    "artigo": "CPP, art. 312",
+    "explicacao": "A preventiva pode ser decretada se houver garantia da ordem pública, instrução criminal ou aplicação da lei penal. (situação análoga)",
+    "tema": "processo penal"
+  },
+  {
+    "nivel": 2,
+    "texto": "Você foi multado por dirigir sob influência de álcool. Qual a penalidade prevista no CTB? (exemplo adicional)",
+    "alternativas": [
+      "Apenas multa",
+      "Multa e suspensão do direito de dirigir por 12 meses",
+      "Detenção de 6 meses a 3 anos",
+      "Advertência por escrito"
+    ],
+    "correta": 1,
+    "artigo": "CTB, art. 165",
+    "explicacao": "Infração gravíssima: multa (10 vezes) e suspensão de 12 meses. (situação análoga)",
+    "tema": "trânsito"
+  },
+  {
+    "nivel": 2,
+    "texto": "Uma empresa compartilhou seus dados pessoais sem sua autorização. Qual direito da LGPD foi violado? (exemplo adicional)",
+    "alternativas": [
+      "Direito à portabilidade",
+      "Direito à exclusão dos dados",
       "Consentimento do titular",
-      "Interesse legítimo",
-      "Cumprimento de obrigação legal",
-      "Todos os anteriores"
+      "Direito de acesso"
     ],
-    "correta": 3,
-    "artigo": "LGPD, Lei correspondente",
-    "explicacao": "De acordo com a LGPD, todos os anteriores é a alternativa correta.",
-    "tema": "LGPD"
+    "correta": 2,
+    "artigo": "LGPD, art. 7º",
+    "explicacao": "O tratamento de dados pessoais exige base legal, sendo o consentimento uma delas. (situação análoga)",
+    "tema": "lgpd"
   },
   {
     "nivel": 2,
-    "texto": "O prazo para reclamação de vício aparente em produto durável é de:",
+    "texto": "Você comprou um fone de ouvido pela internet e após 80 dias ele parou de funcionar. A loja se recusa a trocar. Qual o prazo legal para reclamar de vício em produto durável? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "90 dias",
@@ -1773,97 +1773,97 @@ const bancoPerguntas = [
       "1 ano"
     ],
     "correta": 1,
-    "artigo": "CDC, Lei correspondente",
-    "explicacao": "De acordo com a CDC, 90 dias é a alternativa correta.",
+    "artigo": "CDC, art. 26, I",
+    "explicacao": "Produtos duráveis têm prazo de 90 dias para reclamação de vício aparente. (situação análoga)",
     "tema": "consumidor"
   },
   {
     "nivel": 2,
-    "texto": "A medida socioeducativa para adolescente que pratica ato infracional pode ser:",
+    "texto": "Um adolescente de 15 anos é flagrado pichando um muro. Qual medida socioeducativa pode ser aplicada? (exemplo adicional)",
     "alternativas": [
       "Advertência",
-      "Prestação de serviços",
+      "Prestação de serviços à comunidade",
       "Liberdade assistida",
       "Todas as anteriores"
     ],
     "correta": 3,
-    "artigo": "ECA, Lei correspondente",
-    "explicacao": "De acordo com a ECA, todas as anteriores é a alternativa correta.",
-    "tema": "ECA"
+    "artigo": "ECA, art. 112",
+    "explicacao": "O ECA prevê advertência, prestação de serviços, liberdade assistida, entre outras. (situação análoga)",
+    "tema": "eca"
   },
   {
     "nivel": 2,
-    "texto": "O aviso prévio proporcional ao tempo de serviço tem no mínimo:",
+    "texto": "Você foi demitido sem justa causa após 3 anos na empresa. Quantos dias de aviso prévio você tem direito? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "33 dias",
-      "90 dias",
-      "60 dias"
-    ],
-    "correta": 0,
-    "artigo": "CLT, Lei correspondente",
-    "explicacao": "De acordo com a CLT, 30 dias é a alternativa correta.",
-    "tema": "CLT"
-  },
-  {
-    "nivel": 2,
-    "texto": "A petição inicial será indeferida quando:",
-    "alternativas": [
-      "Inepta",
-      "Faltar pedido",
-      "Manifestamente improcedente",
-      "Todas as anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CPC, Lei correspondente",
-    "explicacao": "De acordo com a CPC, todas as anteriores é a alternativa correta.",
-    "tema": "CPC"
-  },
-  {
-    "nivel": 2,
-    "texto": "A prisão preventiva pode ser decretada para garantir:",
-    "alternativas": [
-      "Ordem econômica",
-      "Instrução criminal",
-      "Saúde do preso",
-      "Pagamento de multa"
+      "39 dias",
+      "90 dias"
     ],
     "correta": 1,
-    "artigo": "CPP, Lei correspondente",
-    "explicacao": "De acordo com a CPP, instrução criminal é a alternativa correta.",
-    "tema": "CPP"
+    "artigo": "CLT, art. 487, §1º",
+    "explicacao": "30 dias + 3 dias por ano trabalhado (máximo 90). (situação análoga)",
+    "tema": "trabalho"
   },
   {
     "nivel": 2,
-    "texto": "Dirigir sob influência de álcool é considerado:",
+    "texto": "Você moveu uma ação judicial, mas o juiz indeferiu sua petição inicial por ela ser inepta. O que isso significa? (exemplo adicional)",
     "alternativas": [
-      "Crime",
-      "Contravenção",
-      "Infração administrativa",
-      "Apenas multa"
+      "Faltava endereço do autor",
+      "A petição não atendia aos requisitos do art. 319 do CPC",
+      "O autor não tinha capacidade de postular",
+      "O valor da causa era irrisório"
     ],
-    "correta": 0,
-    "artigo": "CTB, Lei correspondente",
-    "explicacao": "De acordo com a CTB, crime é a alternativa correta.",
-    "tema": "CTB"
+    "correta": 1,
+    "artigo": "CPC, art. 330, I",
+    "explicacao": "A petição inicial é inepta quando não preenche os requisitos legais. (situação análoga)",
+    "tema": "processo civil"
   },
   {
     "nivel": 2,
-    "texto": "O tratamento de dados pessoais deve ser baseado em:",
+    "texto": "Você foi preso em flagrante. O juiz pode converter sua prisão em preventiva? (exemplo adicional)",
     "alternativas": [
+      "Sim, sempre",
+      "Não, flagrante só cabe relaxamento",
+      "Sim, se presentes os requisitos do art. 312 do CPP",
+      "Não, pois flagrante é obrigatório"
+    ],
+    "correta": 2,
+    "artigo": "CPP, art. 312",
+    "explicacao": "A preventiva pode ser decretada se houver garantia da ordem pública, instrução criminal ou aplicação da lei penal. (situação análoga)",
+    "tema": "processo penal"
+  },
+  {
+    "nivel": 2,
+    "texto": "Você foi multado por dirigir sob influência de álcool. Qual a penalidade prevista no CTB? (exemplo adicional)",
+    "alternativas": [
+      "Apenas multa",
+      "Multa e suspensão do direito de dirigir por 12 meses",
+      "Detenção de 6 meses a 3 anos",
+      "Advertência por escrito"
+    ],
+    "correta": 1,
+    "artigo": "CTB, art. 165",
+    "explicacao": "Infração gravíssima: multa (10 vezes) e suspensão de 12 meses. (situação análoga)",
+    "tema": "trânsito"
+  },
+  {
+    "nivel": 2,
+    "texto": "Uma empresa compartilhou seus dados pessoais sem sua autorização. Qual direito da LGPD foi violado? (exemplo adicional)",
+    "alternativas": [
+      "Direito à portabilidade",
+      "Direito à exclusão dos dados",
       "Consentimento do titular",
-      "Interesse legítimo",
-      "Cumprimento de obrigação legal",
-      "Todos os anteriores"
+      "Direito de acesso"
     ],
-    "correta": 3,
-    "artigo": "LGPD, Lei correspondente",
-    "explicacao": "De acordo com a LGPD, todos os anteriores é a alternativa correta.",
-    "tema": "LGPD"
+    "correta": 2,
+    "artigo": "LGPD, art. 7º",
+    "explicacao": "O tratamento de dados pessoais exige base legal, sendo o consentimento uma delas. (situação análoga)",
+    "tema": "lgpd"
   },
   {
     "nivel": 2,
-    "texto": "O prazo para reclamação de vício aparente em produto durável é de:",
+    "texto": "Você comprou um fone de ouvido pela internet e após 80 dias ele parou de funcionar. A loja se recusa a trocar. Qual o prazo legal para reclamar de vício em produto durável? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "90 dias",
@@ -1871,97 +1871,97 @@ const bancoPerguntas = [
       "1 ano"
     ],
     "correta": 1,
-    "artigo": "CDC, Lei correspondente",
-    "explicacao": "De acordo com a CDC, 90 dias é a alternativa correta.",
+    "artigo": "CDC, art. 26, I",
+    "explicacao": "Produtos duráveis têm prazo de 90 dias para reclamação de vício aparente. (situação análoga)",
     "tema": "consumidor"
   },
   {
     "nivel": 2,
-    "texto": "A medida socioeducativa para adolescente que pratica ato infracional pode ser:",
+    "texto": "Um adolescente de 15 anos é flagrado pichando um muro. Qual medida socioeducativa pode ser aplicada? (exemplo adicional)",
     "alternativas": [
       "Advertência",
-      "Prestação de serviços",
+      "Prestação de serviços à comunidade",
       "Liberdade assistida",
       "Todas as anteriores"
     ],
     "correta": 3,
-    "artigo": "ECA, Lei correspondente",
-    "explicacao": "De acordo com a ECA, todas as anteriores é a alternativa correta.",
-    "tema": "ECA"
+    "artigo": "ECA, art. 112",
+    "explicacao": "O ECA prevê advertência, prestação de serviços, liberdade assistida, entre outras. (situação análoga)",
+    "tema": "eca"
   },
   {
     "nivel": 2,
-    "texto": "O aviso prévio proporcional ao tempo de serviço tem no mínimo:",
+    "texto": "Você foi demitido sem justa causa após 3 anos na empresa. Quantos dias de aviso prévio você tem direito? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "33 dias",
-      "90 dias",
-      "60 dias"
-    ],
-    "correta": 0,
-    "artigo": "CLT, Lei correspondente",
-    "explicacao": "De acordo com a CLT, 30 dias é a alternativa correta.",
-    "tema": "CLT"
-  },
-  {
-    "nivel": 2,
-    "texto": "A petição inicial será indeferida quando:",
-    "alternativas": [
-      "Inepta",
-      "Faltar pedido",
-      "Manifestamente improcedente",
-      "Todas as anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CPC, Lei correspondente",
-    "explicacao": "De acordo com a CPC, todas as anteriores é a alternativa correta.",
-    "tema": "CPC"
-  },
-  {
-    "nivel": 2,
-    "texto": "A prisão preventiva pode ser decretada para garantir:",
-    "alternativas": [
-      "Ordem econômica",
-      "Instrução criminal",
-      "Saúde do preso",
-      "Pagamento de multa"
+      "39 dias",
+      "90 dias"
     ],
     "correta": 1,
-    "artigo": "CPP, Lei correspondente",
-    "explicacao": "De acordo com a CPP, instrução criminal é a alternativa correta.",
-    "tema": "CPP"
+    "artigo": "CLT, art. 487, §1º",
+    "explicacao": "30 dias + 3 dias por ano trabalhado (máximo 90). (situação análoga)",
+    "tema": "trabalho"
   },
   {
     "nivel": 2,
-    "texto": "Dirigir sob influência de álcool é considerado:",
+    "texto": "Você moveu uma ação judicial, mas o juiz indeferiu sua petição inicial por ela ser inepta. O que isso significa? (exemplo adicional)",
     "alternativas": [
-      "Crime",
-      "Contravenção",
-      "Infração administrativa",
-      "Apenas multa"
+      "Faltava endereço do autor",
+      "A petição não atendia aos requisitos do art. 319 do CPC",
+      "O autor não tinha capacidade de postular",
+      "O valor da causa era irrisório"
     ],
-    "correta": 0,
-    "artigo": "CTB, Lei correspondente",
-    "explicacao": "De acordo com a CTB, crime é a alternativa correta.",
-    "tema": "CTB"
+    "correta": 1,
+    "artigo": "CPC, art. 330, I",
+    "explicacao": "A petição inicial é inepta quando não preenche os requisitos legais. (situação análoga)",
+    "tema": "processo civil"
   },
   {
     "nivel": 2,
-    "texto": "O tratamento de dados pessoais deve ser baseado em:",
+    "texto": "Você foi preso em flagrante. O juiz pode converter sua prisão em preventiva? (exemplo adicional)",
     "alternativas": [
+      "Sim, sempre",
+      "Não, flagrante só cabe relaxamento",
+      "Sim, se presentes os requisitos do art. 312 do CPP",
+      "Não, pois flagrante é obrigatório"
+    ],
+    "correta": 2,
+    "artigo": "CPP, art. 312",
+    "explicacao": "A preventiva pode ser decretada se houver garantia da ordem pública, instrução criminal ou aplicação da lei penal. (situação análoga)",
+    "tema": "processo penal"
+  },
+  {
+    "nivel": 2,
+    "texto": "Você foi multado por dirigir sob influência de álcool. Qual a penalidade prevista no CTB? (exemplo adicional)",
+    "alternativas": [
+      "Apenas multa",
+      "Multa e suspensão do direito de dirigir por 12 meses",
+      "Detenção de 6 meses a 3 anos",
+      "Advertência por escrito"
+    ],
+    "correta": 1,
+    "artigo": "CTB, art. 165",
+    "explicacao": "Infração gravíssima: multa (10 vezes) e suspensão de 12 meses. (situação análoga)",
+    "tema": "trânsito"
+  },
+  {
+    "nivel": 2,
+    "texto": "Uma empresa compartilhou seus dados pessoais sem sua autorização. Qual direito da LGPD foi violado? (exemplo adicional)",
+    "alternativas": [
+      "Direito à portabilidade",
+      "Direito à exclusão dos dados",
       "Consentimento do titular",
-      "Interesse legítimo",
-      "Cumprimento de obrigação legal",
-      "Todos os anteriores"
+      "Direito de acesso"
     ],
-    "correta": 3,
-    "artigo": "LGPD, Lei correspondente",
-    "explicacao": "De acordo com a LGPD, todos os anteriores é a alternativa correta.",
-    "tema": "LGPD"
+    "correta": 2,
+    "artigo": "LGPD, art. 7º",
+    "explicacao": "O tratamento de dados pessoais exige base legal, sendo o consentimento uma delas. (situação análoga)",
+    "tema": "lgpd"
   },
   {
     "nivel": 2,
-    "texto": "O prazo para reclamação de vício aparente em produto durável é de:",
+    "texto": "Você comprou um fone de ouvido pela internet e após 80 dias ele parou de funcionar. A loja se recusa a trocar. Qual o prazo legal para reclamar de vício em produto durável? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "90 dias",
@@ -1969,97 +1969,97 @@ const bancoPerguntas = [
       "1 ano"
     ],
     "correta": 1,
-    "artigo": "CDC, Lei correspondente",
-    "explicacao": "De acordo com a CDC, 90 dias é a alternativa correta.",
+    "artigo": "CDC, art. 26, I",
+    "explicacao": "Produtos duráveis têm prazo de 90 dias para reclamação de vício aparente. (situação análoga)",
     "tema": "consumidor"
   },
   {
     "nivel": 2,
-    "texto": "A medida socioeducativa para adolescente que pratica ato infracional pode ser:",
+    "texto": "Um adolescente de 15 anos é flagrado pichando um muro. Qual medida socioeducativa pode ser aplicada? (exemplo adicional)",
     "alternativas": [
       "Advertência",
-      "Prestação de serviços",
+      "Prestação de serviços à comunidade",
       "Liberdade assistida",
       "Todas as anteriores"
     ],
     "correta": 3,
-    "artigo": "ECA, Lei correspondente",
-    "explicacao": "De acordo com a ECA, todas as anteriores é a alternativa correta.",
-    "tema": "ECA"
+    "artigo": "ECA, art. 112",
+    "explicacao": "O ECA prevê advertência, prestação de serviços, liberdade assistida, entre outras. (situação análoga)",
+    "tema": "eca"
   },
   {
     "nivel": 2,
-    "texto": "O aviso prévio proporcional ao tempo de serviço tem no mínimo:",
+    "texto": "Você foi demitido sem justa causa após 3 anos na empresa. Quantos dias de aviso prévio você tem direito? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "33 dias",
-      "90 dias",
-      "60 dias"
-    ],
-    "correta": 0,
-    "artigo": "CLT, Lei correspondente",
-    "explicacao": "De acordo com a CLT, 30 dias é a alternativa correta.",
-    "tema": "CLT"
-  },
-  {
-    "nivel": 2,
-    "texto": "A petição inicial será indeferida quando:",
-    "alternativas": [
-      "Inepta",
-      "Faltar pedido",
-      "Manifestamente improcedente",
-      "Todas as anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CPC, Lei correspondente",
-    "explicacao": "De acordo com a CPC, todas as anteriores é a alternativa correta.",
-    "tema": "CPC"
-  },
-  {
-    "nivel": 2,
-    "texto": "A prisão preventiva pode ser decretada para garantir:",
-    "alternativas": [
-      "Ordem econômica",
-      "Instrução criminal",
-      "Saúde do preso",
-      "Pagamento de multa"
+      "39 dias",
+      "90 dias"
     ],
     "correta": 1,
-    "artigo": "CPP, Lei correspondente",
-    "explicacao": "De acordo com a CPP, instrução criminal é a alternativa correta.",
-    "tema": "CPP"
+    "artigo": "CLT, art. 487, §1º",
+    "explicacao": "30 dias + 3 dias por ano trabalhado (máximo 90). (situação análoga)",
+    "tema": "trabalho"
   },
   {
     "nivel": 2,
-    "texto": "Dirigir sob influência de álcool é considerado:",
+    "texto": "Você moveu uma ação judicial, mas o juiz indeferiu sua petição inicial por ela ser inepta. O que isso significa? (exemplo adicional)",
     "alternativas": [
-      "Crime",
-      "Contravenção",
-      "Infração administrativa",
-      "Apenas multa"
+      "Faltava endereço do autor",
+      "A petição não atendia aos requisitos do art. 319 do CPC",
+      "O autor não tinha capacidade de postular",
+      "O valor da causa era irrisório"
     ],
-    "correta": 0,
-    "artigo": "CTB, Lei correspondente",
-    "explicacao": "De acordo com a CTB, crime é a alternativa correta.",
-    "tema": "CTB"
+    "correta": 1,
+    "artigo": "CPC, art. 330, I",
+    "explicacao": "A petição inicial é inepta quando não preenche os requisitos legais. (situação análoga)",
+    "tema": "processo civil"
   },
   {
     "nivel": 2,
-    "texto": "O tratamento de dados pessoais deve ser baseado em:",
+    "texto": "Você foi preso em flagrante. O juiz pode converter sua prisão em preventiva? (exemplo adicional)",
     "alternativas": [
+      "Sim, sempre",
+      "Não, flagrante só cabe relaxamento",
+      "Sim, se presentes os requisitos do art. 312 do CPP",
+      "Não, pois flagrante é obrigatório"
+    ],
+    "correta": 2,
+    "artigo": "CPP, art. 312",
+    "explicacao": "A preventiva pode ser decretada se houver garantia da ordem pública, instrução criminal ou aplicação da lei penal. (situação análoga)",
+    "tema": "processo penal"
+  },
+  {
+    "nivel": 2,
+    "texto": "Você foi multado por dirigir sob influência de álcool. Qual a penalidade prevista no CTB? (exemplo adicional)",
+    "alternativas": [
+      "Apenas multa",
+      "Multa e suspensão do direito de dirigir por 12 meses",
+      "Detenção de 6 meses a 3 anos",
+      "Advertência por escrito"
+    ],
+    "correta": 1,
+    "artigo": "CTB, art. 165",
+    "explicacao": "Infração gravíssima: multa (10 vezes) e suspensão de 12 meses. (situação análoga)",
+    "tema": "trânsito"
+  },
+  {
+    "nivel": 2,
+    "texto": "Uma empresa compartilhou seus dados pessoais sem sua autorização. Qual direito da LGPD foi violado? (exemplo adicional)",
+    "alternativas": [
+      "Direito à portabilidade",
+      "Direito à exclusão dos dados",
       "Consentimento do titular",
-      "Interesse legítimo",
-      "Cumprimento de obrigação legal",
-      "Todos os anteriores"
+      "Direito de acesso"
     ],
-    "correta": 3,
-    "artigo": "LGPD, Lei correspondente",
-    "explicacao": "De acordo com a LGPD, todos os anteriores é a alternativa correta.",
-    "tema": "LGPD"
+    "correta": 2,
+    "artigo": "LGPD, art. 7º",
+    "explicacao": "O tratamento de dados pessoais exige base legal, sendo o consentimento uma delas. (situação análoga)",
+    "tema": "lgpd"
   },
   {
     "nivel": 2,
-    "texto": "O prazo para reclamação de vício aparente em produto durável é de:",
+    "texto": "Você comprou um fone de ouvido pela internet e após 80 dias ele parou de funcionar. A loja se recusa a trocar. Qual o prazo legal para reclamar de vício em produto durável? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "90 dias",
@@ -2067,97 +2067,97 @@ const bancoPerguntas = [
       "1 ano"
     ],
     "correta": 1,
-    "artigo": "CDC, Lei correspondente",
-    "explicacao": "De acordo com a CDC, 90 dias é a alternativa correta.",
+    "artigo": "CDC, art. 26, I",
+    "explicacao": "Produtos duráveis têm prazo de 90 dias para reclamação de vício aparente. (situação análoga)",
     "tema": "consumidor"
   },
   {
     "nivel": 2,
-    "texto": "A medida socioeducativa para adolescente que pratica ato infracional pode ser:",
+    "texto": "Um adolescente de 15 anos é flagrado pichando um muro. Qual medida socioeducativa pode ser aplicada? (exemplo adicional)",
     "alternativas": [
       "Advertência",
-      "Prestação de serviços",
+      "Prestação de serviços à comunidade",
       "Liberdade assistida",
       "Todas as anteriores"
     ],
     "correta": 3,
-    "artigo": "ECA, Lei correspondente",
-    "explicacao": "De acordo com a ECA, todas as anteriores é a alternativa correta.",
-    "tema": "ECA"
+    "artigo": "ECA, art. 112",
+    "explicacao": "O ECA prevê advertência, prestação de serviços, liberdade assistida, entre outras. (situação análoga)",
+    "tema": "eca"
   },
   {
     "nivel": 2,
-    "texto": "O aviso prévio proporcional ao tempo de serviço tem no mínimo:",
+    "texto": "Você foi demitido sem justa causa após 3 anos na empresa. Quantos dias de aviso prévio você tem direito? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "33 dias",
-      "90 dias",
-      "60 dias"
-    ],
-    "correta": 0,
-    "artigo": "CLT, Lei correspondente",
-    "explicacao": "De acordo com a CLT, 30 dias é a alternativa correta.",
-    "tema": "CLT"
-  },
-  {
-    "nivel": 2,
-    "texto": "A petição inicial será indeferida quando:",
-    "alternativas": [
-      "Inepta",
-      "Faltar pedido",
-      "Manifestamente improcedente",
-      "Todas as anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CPC, Lei correspondente",
-    "explicacao": "De acordo com a CPC, todas as anteriores é a alternativa correta.",
-    "tema": "CPC"
-  },
-  {
-    "nivel": 2,
-    "texto": "A prisão preventiva pode ser decretada para garantir:",
-    "alternativas": [
-      "Ordem econômica",
-      "Instrução criminal",
-      "Saúde do preso",
-      "Pagamento de multa"
+      "39 dias",
+      "90 dias"
     ],
     "correta": 1,
-    "artigo": "CPP, Lei correspondente",
-    "explicacao": "De acordo com a CPP, instrução criminal é a alternativa correta.",
-    "tema": "CPP"
+    "artigo": "CLT, art. 487, §1º",
+    "explicacao": "30 dias + 3 dias por ano trabalhado (máximo 90). (situação análoga)",
+    "tema": "trabalho"
   },
   {
     "nivel": 2,
-    "texto": "Dirigir sob influência de álcool é considerado:",
+    "texto": "Você moveu uma ação judicial, mas o juiz indeferiu sua petição inicial por ela ser inepta. O que isso significa? (exemplo adicional)",
     "alternativas": [
-      "Crime",
-      "Contravenção",
-      "Infração administrativa",
-      "Apenas multa"
+      "Faltava endereço do autor",
+      "A petição não atendia aos requisitos do art. 319 do CPC",
+      "O autor não tinha capacidade de postular",
+      "O valor da causa era irrisório"
     ],
-    "correta": 0,
-    "artigo": "CTB, Lei correspondente",
-    "explicacao": "De acordo com a CTB, crime é a alternativa correta.",
-    "tema": "CTB"
+    "correta": 1,
+    "artigo": "CPC, art. 330, I",
+    "explicacao": "A petição inicial é inepta quando não preenche os requisitos legais. (situação análoga)",
+    "tema": "processo civil"
   },
   {
     "nivel": 2,
-    "texto": "O tratamento de dados pessoais deve ser baseado em:",
+    "texto": "Você foi preso em flagrante. O juiz pode converter sua prisão em preventiva? (exemplo adicional)",
     "alternativas": [
+      "Sim, sempre",
+      "Não, flagrante só cabe relaxamento",
+      "Sim, se presentes os requisitos do art. 312 do CPP",
+      "Não, pois flagrante é obrigatório"
+    ],
+    "correta": 2,
+    "artigo": "CPP, art. 312",
+    "explicacao": "A preventiva pode ser decretada se houver garantia da ordem pública, instrução criminal ou aplicação da lei penal. (situação análoga)",
+    "tema": "processo penal"
+  },
+  {
+    "nivel": 2,
+    "texto": "Você foi multado por dirigir sob influência de álcool. Qual a penalidade prevista no CTB? (exemplo adicional)",
+    "alternativas": [
+      "Apenas multa",
+      "Multa e suspensão do direito de dirigir por 12 meses",
+      "Detenção de 6 meses a 3 anos",
+      "Advertência por escrito"
+    ],
+    "correta": 1,
+    "artigo": "CTB, art. 165",
+    "explicacao": "Infração gravíssima: multa (10 vezes) e suspensão de 12 meses. (situação análoga)",
+    "tema": "trânsito"
+  },
+  {
+    "nivel": 2,
+    "texto": "Uma empresa compartilhou seus dados pessoais sem sua autorização. Qual direito da LGPD foi violado? (exemplo adicional)",
+    "alternativas": [
+      "Direito à portabilidade",
+      "Direito à exclusão dos dados",
       "Consentimento do titular",
-      "Interesse legítimo",
-      "Cumprimento de obrigação legal",
-      "Todos os anteriores"
+      "Direito de acesso"
     ],
-    "correta": 3,
-    "artigo": "LGPD, Lei correspondente",
-    "explicacao": "De acordo com a LGPD, todos os anteriores é a alternativa correta.",
-    "tema": "LGPD"
+    "correta": 2,
+    "artigo": "LGPD, art. 7º",
+    "explicacao": "O tratamento de dados pessoais exige base legal, sendo o consentimento uma delas. (situação análoga)",
+    "tema": "lgpd"
   },
   {
     "nivel": 2,
-    "texto": "O prazo para reclamação de vício aparente em produto durável é de:",
+    "texto": "Você comprou um fone de ouvido pela internet e após 80 dias ele parou de funcionar. A loja se recusa a trocar. Qual o prazo legal para reclamar de vício em produto durável? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "90 dias",
@@ -2165,97 +2165,97 @@ const bancoPerguntas = [
       "1 ano"
     ],
     "correta": 1,
-    "artigo": "CDC, Lei correspondente",
-    "explicacao": "De acordo com a CDC, 90 dias é a alternativa correta.",
+    "artigo": "CDC, art. 26, I",
+    "explicacao": "Produtos duráveis têm prazo de 90 dias para reclamação de vício aparente. (situação análoga)",
     "tema": "consumidor"
   },
   {
     "nivel": 2,
-    "texto": "A medida socioeducativa para adolescente que pratica ato infracional pode ser:",
+    "texto": "Um adolescente de 15 anos é flagrado pichando um muro. Qual medida socioeducativa pode ser aplicada? (exemplo adicional)",
     "alternativas": [
       "Advertência",
-      "Prestação de serviços",
+      "Prestação de serviços à comunidade",
       "Liberdade assistida",
       "Todas as anteriores"
     ],
     "correta": 3,
-    "artigo": "ECA, Lei correspondente",
-    "explicacao": "De acordo com a ECA, todas as anteriores é a alternativa correta.",
-    "tema": "ECA"
+    "artigo": "ECA, art. 112",
+    "explicacao": "O ECA prevê advertência, prestação de serviços, liberdade assistida, entre outras. (situação análoga)",
+    "tema": "eca"
   },
   {
     "nivel": 2,
-    "texto": "O aviso prévio proporcional ao tempo de serviço tem no mínimo:",
+    "texto": "Você foi demitido sem justa causa após 3 anos na empresa. Quantos dias de aviso prévio você tem direito? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "33 dias",
-      "90 dias",
-      "60 dias"
-    ],
-    "correta": 0,
-    "artigo": "CLT, Lei correspondente",
-    "explicacao": "De acordo com a CLT, 30 dias é a alternativa correta.",
-    "tema": "CLT"
-  },
-  {
-    "nivel": 2,
-    "texto": "A petição inicial será indeferida quando:",
-    "alternativas": [
-      "Inepta",
-      "Faltar pedido",
-      "Manifestamente improcedente",
-      "Todas as anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CPC, Lei correspondente",
-    "explicacao": "De acordo com a CPC, todas as anteriores é a alternativa correta.",
-    "tema": "CPC"
-  },
-  {
-    "nivel": 2,
-    "texto": "A prisão preventiva pode ser decretada para garantir:",
-    "alternativas": [
-      "Ordem econômica",
-      "Instrução criminal",
-      "Saúde do preso",
-      "Pagamento de multa"
+      "39 dias",
+      "90 dias"
     ],
     "correta": 1,
-    "artigo": "CPP, Lei correspondente",
-    "explicacao": "De acordo com a CPP, instrução criminal é a alternativa correta.",
-    "tema": "CPP"
+    "artigo": "CLT, art. 487, §1º",
+    "explicacao": "30 dias + 3 dias por ano trabalhado (máximo 90). (situação análoga)",
+    "tema": "trabalho"
   },
   {
     "nivel": 2,
-    "texto": "Dirigir sob influência de álcool é considerado:",
+    "texto": "Você moveu uma ação judicial, mas o juiz indeferiu sua petição inicial por ela ser inepta. O que isso significa? (exemplo adicional)",
     "alternativas": [
-      "Crime",
-      "Contravenção",
-      "Infração administrativa",
-      "Apenas multa"
+      "Faltava endereço do autor",
+      "A petição não atendia aos requisitos do art. 319 do CPC",
+      "O autor não tinha capacidade de postular",
+      "O valor da causa era irrisório"
     ],
-    "correta": 0,
-    "artigo": "CTB, Lei correspondente",
-    "explicacao": "De acordo com a CTB, crime é a alternativa correta.",
-    "tema": "CTB"
+    "correta": 1,
+    "artigo": "CPC, art. 330, I",
+    "explicacao": "A petição inicial é inepta quando não preenche os requisitos legais. (situação análoga)",
+    "tema": "processo civil"
   },
   {
     "nivel": 2,
-    "texto": "O tratamento de dados pessoais deve ser baseado em:",
+    "texto": "Você foi preso em flagrante. O juiz pode converter sua prisão em preventiva? (exemplo adicional)",
     "alternativas": [
+      "Sim, sempre",
+      "Não, flagrante só cabe relaxamento",
+      "Sim, se presentes os requisitos do art. 312 do CPP",
+      "Não, pois flagrante é obrigatório"
+    ],
+    "correta": 2,
+    "artigo": "CPP, art. 312",
+    "explicacao": "A preventiva pode ser decretada se houver garantia da ordem pública, instrução criminal ou aplicação da lei penal. (situação análoga)",
+    "tema": "processo penal"
+  },
+  {
+    "nivel": 2,
+    "texto": "Você foi multado por dirigir sob influência de álcool. Qual a penalidade prevista no CTB? (exemplo adicional)",
+    "alternativas": [
+      "Apenas multa",
+      "Multa e suspensão do direito de dirigir por 12 meses",
+      "Detenção de 6 meses a 3 anos",
+      "Advertência por escrito"
+    ],
+    "correta": 1,
+    "artigo": "CTB, art. 165",
+    "explicacao": "Infração gravíssima: multa (10 vezes) e suspensão de 12 meses. (situação análoga)",
+    "tema": "trânsito"
+  },
+  {
+    "nivel": 2,
+    "texto": "Uma empresa compartilhou seus dados pessoais sem sua autorização. Qual direito da LGPD foi violado? (exemplo adicional)",
+    "alternativas": [
+      "Direito à portabilidade",
+      "Direito à exclusão dos dados",
       "Consentimento do titular",
-      "Interesse legítimo",
-      "Cumprimento de obrigação legal",
-      "Todos os anteriores"
+      "Direito de acesso"
     ],
-    "correta": 3,
-    "artigo": "LGPD, Lei correspondente",
-    "explicacao": "De acordo com a LGPD, todos os anteriores é a alternativa correta.",
-    "tema": "LGPD"
+    "correta": 2,
+    "artigo": "LGPD, art. 7º",
+    "explicacao": "O tratamento de dados pessoais exige base legal, sendo o consentimento uma delas. (situação análoga)",
+    "tema": "lgpd"
   },
   {
     "nivel": 2,
-    "texto": "O prazo para reclamação de vício aparente em produto durável é de:",
+    "texto": "Você comprou um fone de ouvido pela internet e após 80 dias ele parou de funcionar. A loja se recusa a trocar. Qual o prazo legal para reclamar de vício em produto durável? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "90 dias",
@@ -2263,97 +2263,97 @@ const bancoPerguntas = [
       "1 ano"
     ],
     "correta": 1,
-    "artigo": "CDC, Lei correspondente",
-    "explicacao": "De acordo com a CDC, 90 dias é a alternativa correta.",
+    "artigo": "CDC, art. 26, I",
+    "explicacao": "Produtos duráveis têm prazo de 90 dias para reclamação de vício aparente. (situação análoga)",
     "tema": "consumidor"
   },
   {
     "nivel": 2,
-    "texto": "A medida socioeducativa para adolescente que pratica ato infracional pode ser:",
+    "texto": "Um adolescente de 15 anos é flagrado pichando um muro. Qual medida socioeducativa pode ser aplicada? (exemplo adicional)",
     "alternativas": [
       "Advertência",
-      "Prestação de serviços",
+      "Prestação de serviços à comunidade",
       "Liberdade assistida",
       "Todas as anteriores"
     ],
     "correta": 3,
-    "artigo": "ECA, Lei correspondente",
-    "explicacao": "De acordo com a ECA, todas as anteriores é a alternativa correta.",
-    "tema": "ECA"
+    "artigo": "ECA, art. 112",
+    "explicacao": "O ECA prevê advertência, prestação de serviços, liberdade assistida, entre outras. (situação análoga)",
+    "tema": "eca"
   },
   {
     "nivel": 2,
-    "texto": "O aviso prévio proporcional ao tempo de serviço tem no mínimo:",
+    "texto": "Você foi demitido sem justa causa após 3 anos na empresa. Quantos dias de aviso prévio você tem direito? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "33 dias",
-      "90 dias",
-      "60 dias"
-    ],
-    "correta": 0,
-    "artigo": "CLT, Lei correspondente",
-    "explicacao": "De acordo com a CLT, 30 dias é a alternativa correta.",
-    "tema": "CLT"
-  },
-  {
-    "nivel": 2,
-    "texto": "A petição inicial será indeferida quando:",
-    "alternativas": [
-      "Inepta",
-      "Faltar pedido",
-      "Manifestamente improcedente",
-      "Todas as anteriores"
-    ],
-    "correta": 3,
-    "artigo": "CPC, Lei correspondente",
-    "explicacao": "De acordo com a CPC, todas as anteriores é a alternativa correta.",
-    "tema": "CPC"
-  },
-  {
-    "nivel": 2,
-    "texto": "A prisão preventiva pode ser decretada para garantir:",
-    "alternativas": [
-      "Ordem econômica",
-      "Instrução criminal",
-      "Saúde do preso",
-      "Pagamento de multa"
+      "39 dias",
+      "90 dias"
     ],
     "correta": 1,
-    "artigo": "CPP, Lei correspondente",
-    "explicacao": "De acordo com a CPP, instrução criminal é a alternativa correta.",
-    "tema": "CPP"
+    "artigo": "CLT, art. 487, §1º",
+    "explicacao": "30 dias + 3 dias por ano trabalhado (máximo 90). (situação análoga)",
+    "tema": "trabalho"
   },
   {
     "nivel": 2,
-    "texto": "Dirigir sob influência de álcool é considerado:",
+    "texto": "Você moveu uma ação judicial, mas o juiz indeferiu sua petição inicial por ela ser inepta. O que isso significa? (exemplo adicional)",
     "alternativas": [
-      "Crime",
-      "Contravenção",
-      "Infração administrativa",
-      "Apenas multa"
+      "Faltava endereço do autor",
+      "A petição não atendia aos requisitos do art. 319 do CPC",
+      "O autor não tinha capacidade de postular",
+      "O valor da causa era irrisório"
     ],
-    "correta": 0,
-    "artigo": "CTB, Lei correspondente",
-    "explicacao": "De acordo com a CTB, crime é a alternativa correta.",
-    "tema": "CTB"
+    "correta": 1,
+    "artigo": "CPC, art. 330, I",
+    "explicacao": "A petição inicial é inepta quando não preenche os requisitos legais. (situação análoga)",
+    "tema": "processo civil"
   },
   {
     "nivel": 2,
-    "texto": "O tratamento de dados pessoais deve ser baseado em:",
+    "texto": "Você foi preso em flagrante. O juiz pode converter sua prisão em preventiva? (exemplo adicional)",
     "alternativas": [
+      "Sim, sempre",
+      "Não, flagrante só cabe relaxamento",
+      "Sim, se presentes os requisitos do art. 312 do CPP",
+      "Não, pois flagrante é obrigatório"
+    ],
+    "correta": 2,
+    "artigo": "CPP, art. 312",
+    "explicacao": "A preventiva pode ser decretada se houver garantia da ordem pública, instrução criminal ou aplicação da lei penal. (situação análoga)",
+    "tema": "processo penal"
+  },
+  {
+    "nivel": 2,
+    "texto": "Você foi multado por dirigir sob influência de álcool. Qual a penalidade prevista no CTB? (exemplo adicional)",
+    "alternativas": [
+      "Apenas multa",
+      "Multa e suspensão do direito de dirigir por 12 meses",
+      "Detenção de 6 meses a 3 anos",
+      "Advertência por escrito"
+    ],
+    "correta": 1,
+    "artigo": "CTB, art. 165",
+    "explicacao": "Infração gravíssima: multa (10 vezes) e suspensão de 12 meses. (situação análoga)",
+    "tema": "trânsito"
+  },
+  {
+    "nivel": 2,
+    "texto": "Uma empresa compartilhou seus dados pessoais sem sua autorização. Qual direito da LGPD foi violado? (exemplo adicional)",
+    "alternativas": [
+      "Direito à portabilidade",
+      "Direito à exclusão dos dados",
       "Consentimento do titular",
-      "Interesse legítimo",
-      "Cumprimento de obrigação legal",
-      "Todos os anteriores"
+      "Direito de acesso"
     ],
-    "correta": 3,
-    "artigo": "LGPD, Lei correspondente",
-    "explicacao": "De acordo com a LGPD, todos os anteriores é a alternativa correta.",
-    "tema": "LGPD"
+    "correta": 2,
+    "artigo": "LGPD, art. 7º",
+    "explicacao": "O tratamento de dados pessoais exige base legal, sendo o consentimento uma delas. (situação análoga)",
+    "tema": "lgpd"
   },
   {
     "nivel": 2,
-    "texto": "O prazo para reclamação de vício aparente em produto durável é de:",
+    "texto": "Você comprou um fone de ouvido pela internet e após 80 dias ele parou de funcionar. A loja se recusa a trocar. Qual o prazo legal para reclamar de vício em produto durável? (exemplo adicional)",
     "alternativas": [
       "30 dias",
       "90 dias",
@@ -2361,24 +2361,24 @@ const bancoPerguntas = [
       "1 ano"
     ],
     "correta": 1,
-    "artigo": "CDC, Lei correspondente",
-    "explicacao": "De acordo com a CDC, 90 dias é a alternativa correta.",
+    "artigo": "CDC, art. 26, I",
+    "explicacao": "Produtos duráveis têm prazo de 90 dias para reclamação de vício aparente. (situação análoga)",
     "tema": "consumidor"
   },
   {
     "nivel": 2,
-    "texto": "A medida socioeducativa para adolescente que pratica ato infracional pode ser:",
+    "texto": "Um adolescente de 15 anos é flagrado pichando um muro. Qual medida socioeducativa pode ser aplicada? (exemplo adicional)",
     "alternativas": [
       "Advertência",
-      "Prestação de serviços",
+      "Prestação de serviços à comunidade",
       "Liberdade assistida",
       "Todas as anteriores"
     ],
     "correta": 3,
-    "artigo": "ECA, Lei correspondente",
-    "explicacao": "De acordo com a ECA, todas as anteriores é a alternativa correta.",
-    "tema": "ECA"
+    "artigo": "ECA, art. 112",
+    "explicacao": "O ECA prevê advertência, prestação de serviços, liberdade assistida, entre outras. (situação análoga)",
+    "tema": "eca"
   }
 ]
-if (typeof module !== undefined && module.exports) module.exports = bancoPerguntas;
+if (typeof module !== "undefined" && module.exports) module.exports = bancoPerguntas;
 else window.bancoPerguntas = bancoPerguntas;
