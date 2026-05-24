@@ -5,11 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Quiz Cidadão – Seus Direitos</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       background: linear-gradient(145deg, #1e3c72 0%, #2a5298 100%);
       font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
@@ -26,7 +22,6 @@
       border-radius: 2rem;
       box-shadow: 0 20px 35px rgba(0,0,0,0.3);
       overflow: hidden;
-      transition: all 0.2s;
     }
     .header {
       background: #0b2b44;
@@ -38,56 +33,50 @@
     .content {
       padding: 2rem;
     }
-    .form-group {
-      margin-bottom: 1.2rem;
-    }
-    label {
-      display: block;
+    .question-text {
+      font-size: 1.3rem;
       font-weight: 600;
-      margin-bottom: 0.3rem;
-      color: #1e2a3a;
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+      color: #0b2b44;
     }
-    input, select {
-      width: 100%;
-      padding: 0.6rem;
-      border-radius: 0.5rem;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-    .avatar-options {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      margin: 0.5rem 0;
-    }
-    .avatar {
-      cursor: pointer;
-      text-align: center;
+    .dica {
+      background: #eef2f5;
       padding: 0.5rem;
       border-radius: 0.5rem;
-      transition: 0.1s;
-      background: #e9ecef;
+      margin-bottom: 1rem;
+      font-style: italic;
+      font-size: 0.9rem;
     }
-    .avatar.selected {
-      background: #4caf50;
-      color: white;
-    }
-    .interest-options {
+    .alternativas {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 0.5rem;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
     }
-    .interest-options label {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      background: #e9ecef;
-      padding: 0.3rem 0.8rem;
-      border-radius: 2rem;
+    .alt-btn {
+      background: #f1f5f9;
+      border: 2px solid #cbd5e1;
+      border-radius: 1rem;
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      text-align: left;
       cursor: pointer;
+      transition: 0.1s;
     }
-    button {
+    .alt-btn:hover { background: #e2e8f0; transform: scale(1.01); }
+    .alt-btn.selected { background: #d9f0e6; border-color: #2e7d32; }
+    .feedback {
+      background: #e9ecef;
+      border-radius: 1rem;
+      padding: 1rem;
+      margin: 1rem 0;
+      display: none;
+      border-left: 6px solid #2a5298;
+    }
+    .feedback.correct { border-left-color: #2e7d32; background: #e0f2e9; }
+    .feedback.wrong { border-left-color: #c62828; background: #ffe6e6; }
+    .next-btn {
       background: #2e7d32;
       color: white;
       border: none;
@@ -99,12 +88,14 @@
       width: 100%;
       transition: 0.2s;
     }
-    button:hover {
-      background: #1b5e20;
+    .next-btn:disabled { background: #9e9e9e; cursor: not-allowed; }
+    .progress-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      font-weight: bold;
     }
-    .hidden {
-      display: none;
-    }
+    .hidden { display: none; }
     footer {
       background: #eef2f5;
       padding: 0.8rem;
@@ -112,58 +103,82 @@
       font-size: 0.7rem;
       color: #2c3e66;
     }
+    .avatar-options { display: flex; gap: 1rem; justify-content: center; margin: 0.5rem 0; }
+    .avatar { cursor: pointer; text-align: center; padding: 0.5rem; border-radius: 0.5rem; background: #e9ecef; }
+    .avatar.selected { background: #4caf50; color: white; }
+    .interest-options { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+    .interest-options label { display: inline-flex; align-items: center; gap: 0.3rem; background: #e9ecef; padding: 0.3rem 0.8rem; border-radius: 2rem; cursor: pointer; }
+    button { background: #2e7d32; color: white; border: none; border-radius: 2rem; padding: 0.8rem 1.5rem; font-size: 1rem; font-weight: bold; cursor: pointer; width: 100%; transition: 0.2s; }
+    button:hover { background: #1b5e20; }
+    .form-group { margin-bottom: 1.2rem; }
+    label { display: block; font-weight: 600; margin-bottom: 0.3rem; color: #1e2a3a; }
+    input, select { width: 100%; padding: 0.6rem; border-radius: 0.5rem; border: 1px solid #ccc; font-size: 1rem; }
   </style>
 </head>
 <body>
 <div class="container" id="app">
-  <div class="header">🧠 CIDADÃO QUIZ – IDENTIFICAÇÃO</div>
-  <div class="content" id="identificacao">
-    <div class="form-group">
-      <label>👤 Seu nome:</label>
-      <input type="text" id="nome" placeholder="Ex: João Silva">
-    </div>
-    <div class="form-group">
-      <label>🎂 Idade:</label>
-      <input type="number" id="idade" min="12" max="99" placeholder="16">
-    </div>
-    <div class="form-group">
-      <label>🧑‍🎨 Escolha seu avatar:</label>
-      <div class="avatar-options">
-        <div class="avatar" data-avatar="estudante">👨‍🎓 Estudante</div>
-        <div class="avatar" data-avatar="profissional">👩‍💼 Profissional</div>
-        <div class="avatar" data-avatar="cidadao">🧙‍♂️ Cidadão</div>
+  <div id="identificacao">
+    <div class="header">🧠 CIDADÃO QUIZ – IDENTIFICAÇÃO</div>
+    <div class="content">
+      <div class="form-group"><label>👤 Seu nome:</label><input type="text" id="nome" placeholder="Ex: João Silva"></div>
+      <div class="form-group"><label>🎂 Idade:</label><input type="number" id="idade" min="12" max="99" placeholder="16"></div>
+      <div class="form-group">
+        <label>🧑‍🎨 Escolha seu avatar:</label>
+        <div class="avatar-options">
+          <div class="avatar" data-avatar="estudante">👨‍🎓 Estudante</div>
+          <div class="avatar" data-avatar="profissional">👩‍💼 Profissional</div>
+          <div class="avatar" data-avatar="cidadao">🧙‍♂️ Cidadão</div>
+        </div>
+        <input type="hidden" id="avatar" value="estudante">
       </div>
-      <input type="hidden" id="avatar" value="estudante">
-    </div>
-    <div class="form-group">
-      <label>📚 Área de interesse (opcional):</label>
-      <div class="interest-options">
-        <label><input type="checkbox" value="consumidor"> Consumidor</label>
-        <label><input type="checkbox" value="trabalho"> Trabalho</label>
-        <label><input type="checkbox" value="penal"> Penal</label>
-        <label><input type="checkbox" value="constitucional"> Constitucional</label>
-        <label><input type="checkbox" value="todos" checked> Todos</label>
+      <div class="form-group">
+        <label>📚 Área de interesse (opcional):</label>
+        <div class="interest-options">
+          <label><input type="checkbox" value="consumidor"> Consumidor</label>
+          <label><input type="checkbox" value="trabalho"> Trabalho</label>
+          <label><input type="checkbox" value="penal"> Penal</label>
+          <label><input type="checkbox" value="constitucional"> Constitucional</label>
+          <label><input type="checkbox" value="todos" checked> Todos</label>
+        </div>
       </div>
+      <button id="btn-iniciar-quiz">🚀 INICIAR JORNADA</button>
+      <p style="margin-top:1rem; font-size:0.8rem;">Seus dados ficam apenas no seu navegador.</p>
     </div>
-    <button id="btn-iniciar-quiz">🚀 INICIAR JORNADA</button>
-    <p style="margin-top:1rem; font-size:0.8rem; color:#555;">Seus dados ficam apenas no seu navegador. Usaremos para personalizar sua experiência.</p>
   </div>
   <div id="quiz-container" class="hidden">
-    <!-- Aqui será carregado o quiz propriamente dito -->
     <div class="header" id="quiz-header">🧠 CIDADÃO QUIZ</div>
-    <div class="content" id="quiz-content">
-      <!-- O conteúdo dinâmico do quiz virá via JS -->
+    <div class="content">
+      <div class="progress-info">
+        <span id="nivel-info">Nível 1</span>
+        <span>⭐ Pontos: <span id="pontuacao">0</span></span>
+      </div>
+      <div id="pergunta-area"></div>
+      <div id="feedback-area" class="feedback"></div>
+      <button id="next-btn" class="next-btn" disabled>Responder & Próxima ❯</button>
     </div>
   </div>
   <footer>⚖️ Baseado na CF/88, CDC, ECA, CLT, CPC, CPP, CTB.</footer>
 </div>
-
 <script src="perguntas.js"></script>
 <script>
-  // DOM elements
+  let userData = null;
+  let perguntas = [];
+  let indiceAtual = 0;
+  let pontuacao = 0;
+  let respostaSelecionada = null;
+  let jaRespondeu = false;
+  let nivelAtual = 1;
+  const PONTOS_N1_INICIO = 5;
+  const PONTOS_N1_INCREMENTO = 1;
+
   const identificacaoDiv = document.getElementById('identificacao');
   const quizContainer = document.getElementById('quiz-container');
   const btnIniciar = document.getElementById('btn-iniciar-quiz');
+  const perguntaArea = document.getElementById('pergunta-area');
+  const feedbackDiv = document.getElementById('feedback-area');
+  const nextBtn = document.getElementById('next-btn');
+  const pontuacaoSpan = document.getElementById('pontuacao');
+  const nivelInfoSpan = document.getElementById('nivel-info');
 
   // Avatar selection
   const avatarDivs = document.querySelectorAll('.avatar');
@@ -175,53 +190,124 @@
       avatarInput.value = div.dataset.avatar;
     });
   });
-  // Seleciona primeiro avatar por padrão
-  avatarDivs[0].classList.add('selected');
+  if (avatarDivs.length) avatarDivs[0].classList.add('selected');
 
-  // Salvar dados e iniciar quiz
   btnIniciar.addEventListener('click', () => {
     const nome = document.getElementById('nome').value.trim();
     const idade = parseInt(document.getElementById('idade').value);
     const avatar = avatarInput.value;
     const interesses = Array.from(document.querySelectorAll('.interest-options input:checked')).map(cb => cb.value);
-    
-    if (!nome) {
-      alert('Por favor, digite seu nome.');
-      return;
-    }
-    if (isNaN(idade) || idade < 12 || idade > 99) {
-      alert('Idade inválida (12 a 99 anos).');
-      return;
-    }
-
-    const userData = { nome, idade, avatar, interesses };
+    if (!nome) { alert('Por favor, digite seu nome.'); return; }
+    if (isNaN(idade) || idade < 12 || idade > 99) { alert('Idade inválida (12 a 99 anos).'); return; }
+    userData = { nome, idade, avatar, interesses };
     localStorage.setItem('cidadao_user', JSON.stringify(userData));
-    
-    // Esconder tela de identificação e mostrar o quiz
     identificacaoDiv.style.display = 'none';
     quizContainer.classList.remove('hidden');
-    
-    // Iniciar o quiz (chamar função principal)
-    iniciarQuiz();
+    iniciarNivel1();
   });
 
-  // Função principal do quiz (será expandida nas próximas etapas)
-  // Por enquanto, uma versão simples para testar a transição
-  function iniciarQuiz() {
-    const quizContent = document.getElementById('quiz-content');
-    quizContent.innerHTML = '<p style="text-align:center;">Carregando perguntas... Aguarde.</p>';
-    
-    // Simulação: mostrar uma mensagem de sucesso (depois substituiremos pelo quiz real)
-    setTimeout(() => {
-      quizContent.innerHTML = `
-        <div style="background:#e0f2e9; padding:1rem; border-radius:1rem;">
-          <h3>✅ Identificação concluída!</h3>
-          <p>Em breve você verá as perguntas do Nível 1 aqui.</p>
-          <p>Seus dados foram salvos no navegador.</p>
-        </div>
-      `;
-    }, 500);
+  function iniciarNivel1() {
+    if (typeof bancoPerguntas === 'undefined') {
+      perguntaArea.innerHTML = '<p style="color:red;">Erro: banco de perguntas não carregado.</p>';
+      return;
+    }
+    perguntas = bancoPerguntas.filter(q => q.nivel === 1);
+    if (perguntas.length === 0) {
+      perguntaArea.innerHTML = '<p style="color:red;">Nenhuma pergunta de Nível 1 encontrada.</p>';
+      return;
+    }
+    indiceAtual = 0;
+    pontuacao = 0;
+    atualizarPontuacao();
+    carregarPergunta();
   }
+
+  function atualizarPontuacao() {
+    pontuacaoSpan.innerText = pontuacao;
+  }
+
+  function carregarPergunta() {
+    if (indiceAtual >= perguntas.length) {
+      finalizarNivel();
+      return;
+    }
+    const p = perguntas[indiceAtual];
+    const valorPergunta = PONTOS_N1_INICIO + (indiceAtual * PONTOS_N1_INCREMENTO);
+    let html = `<div class="question-text">${p.texto}</div>`;
+    html += `<div class="dica">⚡ Dica: ${p.artigo}</div>`;
+    html += `<div class="alternativas" id="alternativas">`;
+    p.alternativas.forEach((alt, idx) => {
+      html += `<div class="alt-btn" data-alt="${idx}">${String.fromCharCode(65+idx)}) ${alt}</div>`;
+    });
+    html += `</div>`;
+    perguntaArea.innerHTML = html;
+    document.querySelectorAll('.alt-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        if (jaRespondeu) return;
+        const idx = parseInt(btn.dataset.alt);
+        respostaSelecionada = idx;
+        document.querySelectorAll('.alt-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        nextBtn.disabled = false;
+      });
+    });
+    feedbackDiv.style.display = 'none';
+    feedbackDiv.innerHTML = '';
+    nextBtn.disabled = true;
+    jaRespondeu = false;
+    respostaSelecionada = null;
+    nextBtn.innerText = 'Responder & Próxima ❯';
+  }
+
+  function responder() {
+    if (respostaSelecionada === null) return;
+    const p = perguntas[indiceAtual];
+    const correta = (respostaSelecionada === p.correta);
+    const valorPergunta = PONTOS_N1_INICIO + (indiceAtual * PONTOS_N1_INCREMENTO);
+    if (correta) {
+      pontuacao += valorPergunta;
+      atualizarPontuacao();
+      feedbackDiv.className = 'feedback correct';
+      feedbackDiv.innerHTML = `<strong>✅ CORRETO!</strong><br>📖 ${p.artigo}<br>💡 ${p.explicacao}`;
+    } else {
+      const alternativaCorreta = p.alternativas[p.correta];
+      feedbackDiv.className = 'feedback wrong';
+      feedbackDiv.innerHTML = `<strong>❌ ERRADO.</strong> A resposta correta é: ${String.fromCharCode(65+p.correta)}) ${alternativaCorreta}<br>📖 ${p.artigo}<br>💡 ${p.explicacao}`;
+    }
+    feedbackDiv.style.display = 'block';
+    jaRespondeu = true;
+    nextBtn.disabled = false;
+    nextBtn.innerText = 'Próxima ➡';
+  }
+
+  function avancar() {
+    if (!jaRespondeu) return;
+    indiceAtual++;
+    if (indiceAtual < perguntas.length) {
+      carregarPergunta();
+    } else {
+      finalizarNivel();
+    }
+  }
+
+  function finalizarNivel() {
+    perguntaArea.innerHTML = `<div style="background:#e0f2e9; padding:1rem; border-radius:1rem; text-align:center;">
+      <h3>🏆 Nível 1 concluído!</h3>
+      <p>Pontuação final: ${pontuacao} pontos</p>
+      <p>Em breve você poderá avançar para o Nível 2.</p>
+      <button id="reiniciar-quiz" style="margin-top:1rem;">🔁 Reiniciar Quiz</button>
+    </div>`;
+    const reiniciarBtn = document.getElementById('reiniciar-quiz');
+    if (reiniciarBtn) reiniciarBtn.addEventListener('click', () => location.reload());
+  }
+
+  nextBtn.addEventListener('click', () => {
+    if (!jaRespondeu && respostaSelecionada !== null) {
+      responder();
+    } else if (jaRespondeu) {
+      avancar();
+    }
+  });
 </script>
 </body>
 </html>
