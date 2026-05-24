@@ -236,20 +236,19 @@
     localStorage.setItem('cidadao_conquistas', JSON.stringify(conquistas));
   }
 
-  function adicionarConquista(nomeMedalha) {
-    if (!conquistas.includes(nomeMedalha)) {
-      conquistas.push(nomeMedalha);
+  function adicionarConquista(conquista) {
+    if (!conquistas.includes(conquista.nome)) {
+      conquistas.push(conquista.nome);
       salvarConquistas();
       atualizarDisplayConquistas();
-      // Exibe notificação temporária
-      const notif = document.createElement('div');
-      notif.className = 'feedback correct';
-      notif.style.marginTop = '0.5rem';
-      notif.style.padding = '0.5rem';
-      notif.style.borderRadius = '0.5rem';
-      notif.innerHTML = `🏅 <strong>NOVA CONQUISTA!</strong> Você desbloqueou: ${nomeMedalha}`;
+      const notif = document.createElement("div");
+      notif.className = "feedback correct";
+      notif.style.marginTop = "0.5rem";
+      notif.style.padding = "0.5rem";
+      notif.style.borderRadius = "0.5rem";
+      notif.innerHTML = `<span style="font-size:1.2rem;">${conquista.icone}</span> <strong>${conquista.nome}</strong> - ${conquista.descricao}`;
       feedbackDiv.parentNode.insertBefore(notif, feedbackDiv.nextSibling);
-      setTimeout(() => notif.remove(), 5000);
+      setTimeout(() => notif.remove(), 6000);
     }
   }
 
@@ -374,15 +373,31 @@
       sequenciaAcertos++;
       // Verifica conquistas a cada 5 acertos consecutivos
       if (sequenciaAcertos % 5 === 0 && sequenciaAcertos > 0) {
-        const medalha = `🏅 ${sequenciaAcertos} acertos consecutivos`;
-        adicionarConquista(medalha);
-        pontosGanhos += 5;  // bônus
-        // Mostra mensagem de bônus
-        const bonusMsg = document.createElement('div');
-        bonusMsg.className = 'feedback correct';
-        bonusMsg.style.marginTop = '0.5rem';
-        bonusMsg.style.padding = '0.5rem';
-        bonusMsg.style.borderRadius = '0.5rem';
+        pontosGanhos += 5;
+        const conquistasMap = {
+          5: { icone: "🏅", nome: "Saber", descricao: "5 acertos consecutivos" },
+          10: { icone: "🩺", nome: "Jaleco da Justiça", descricao: "10 acertos consecutivos" },
+          15: { icone: "💎", nome: "Diamante da Cidadania", descricao: "15 acertos consecutivos" },
+          20: { icone: "🧠", nome: "Sabedoria", descricao: "20 acertos consecutivos" },
+          25: { icone: "🌟", nome: "Estrela dos Direitos", descricao: "25 acertos consecutivos" },
+          30: { icone: "⚖️", nome: "Balança da Equidade", descricao: "30 acertos consecutivos" },
+          35: { icone: "🛡️", nome: "Escudo do Consumidor", descricao: "35 acertos consecutivos" },
+          40: { icone: "📜", nome: "Pergaminho do ECA", descricao: "40 acertos consecutivos" },
+          45: { icone: "🏭", nome: "Capacete do Trabalhador", descricao: "45 acertos consecutivos" },
+          50: { icone: "⚙️", nome: "Engrenagem da Justiça", descricao: "50 acertos consecutivos" },
+          55: { icone: "🚗", nome: "Selo do Trânsito", descricao: "55 acertos consecutivos" },
+          60: { icone: "🔒", nome: "Escudo da LGPD", descricao: "60 acertos consecutivos" }
+        };
+        if (conquistasMap[sequenciaAcertos]) {
+          adicionarConquista(conquistasMap[sequenciaAcertos]);
+        } else {
+          adicionarConquista({ icone: "🏅", nome: `${sequenciaAcertos} acertos`, descricao: "Sequência de acertos" });
+        }
+        const bonusMsg = document.createElement("div");
+        bonusMsg.className = "feedback correct";
+        bonusMsg.style.marginTop = "0.5rem";
+        bonusMsg.style.padding = "0.5rem";
+        bonusMsg.style.borderRadius = "0.5rem";
         bonusMsg.innerHTML = `🎁 <strong>BÔNUS DE SEQUÊNCIA!</strong> Você acertou ${sequenciaAcertos} perguntas seguidas! +5 pontos extras.`;
         feedbackDiv.parentNode.insertBefore(bonusMsg, feedbackDiv.nextSibling);
         setTimeout(() => bonusMsg.remove(), 4000);
