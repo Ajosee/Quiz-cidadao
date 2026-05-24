@@ -226,7 +226,7 @@
 
   // --- Carregar conquistas do localStorage e exibir
   function carregarConquistas() {
-    const salvas = localStorage.getItem('cidadao_conquistas');
+    const salvas = localStorage.getItem("cidadao_conquistas");
     if (salvas) conquistas = JSON.parse(salvas);
     else conquistas = [];
     atualizarDisplayConquistas();
@@ -237,8 +237,8 @@
   }
 
   function adicionarConquista(conquista) {
-    if (!conquistas.includes(conquista.nome)) {
-      conquistas.push(conquista.nome);
+    if (!conquistas.some(c => c.nome === conquista.nome)) {
+      conquistas.push(conquista);
       salvarConquistas();
       atualizarDisplayConquistas();
       const notif = document.createElement("div");
@@ -248,13 +248,13 @@
       notif.style.borderRadius = "0.5rem";
       notif.innerHTML = `<span style="font-size:1.2rem;">${conquista.icone}</span> <strong>${conquista.nome}</strong> - ${conquista.descricao}`;
       feedbackDiv.parentNode.insertBefore(notif, feedbackDiv.nextSibling);
-      setTimeout(() => notif.remove(), 6000);
+      setTimeout(() => notif.remove(), 5000);
     }
   }
 
   function atualizarDisplayConquistas() {
     if (!conquistasArea) return;
-    conquistasArea.innerHTML = conquistas.map(c => `<span class="badge">🏅 ${c}</span>`).join('');
+    conquistasArea.innerHTML = conquistas.map(c => `<span class="badge" title="${c.descricao}">${c.icone} ${c.nome}</span>`).join("");
   }
 
   // --- Avatar e interesses ---
@@ -286,7 +286,38 @@
   });
 
   // --- Carregar Nível 1 do banco de perguntas ---
+  // Conquistas temáticas por nível
+  const conquistasPorNivel = {
+    1: [
+      { icone: "🏅", nome: "Saber", descricao: "5 acertos consecutivos", sequencia: 5 },
+      { icone: "🩺", nome: "Jaleco da Justiça", descricao: "10 acertos consecutivos", sequencia: 10 },
+      { icone: "💎", nome: "Diamante da Cidadania", descricao: "15 acertos consecutivos", sequencia: 15 },
+      { icone: "🧠", nome: "Sabedoria", descricao: "20 acertos consecutivos", sequencia: 20 },
+      { icone: "🌟", nome: "Estrela dos Direitos", descricao: "25 acertos consecutivos", sequencia: 25 },
+      { icone: "⚖️", nome: "Balança da Equidade", descricao: "30 acertos consecutivos", sequencia: 30 },
+      { icone: "🛡️", nome: "Escudo do Consumidor", descricao: "35 acertos consecutivos", sequencia: 35 },
+      { icone: "📜", nome: "Pergaminho do ECA", descricao: "40 acertos consecutivos", sequencia: 40 },
+      { icone: "🏭", nome: "Capacete do Trabalhador", descricao: "45 acertos consecutivos", sequencia: 45 },
+      { icone: "⚙️", nome: "Engrenagem da Justiça", descricao: "50 acertos consecutivos", sequencia: 50 },
+      { icone: "🚗", nome: "Selo do Trânsito", descricao: "55 acertos consecutivos", sequencia: 55 },
+      { icone: "🔒", nome: "Escudo da LGPD", descricao: "60 acertos consecutivos", sequencia: 60 }
+    ],
+    2: [
+      { icone: "⚡", nome: "Relâmpago do CDC", descricao: "5 acertos consecutivos (N2)", sequencia: 5 },
+      { icone: "🛡️", nome: "Escudo do ECA", descricao: "10 acertos consecutivos (N2)", sequencia: 10 },
+      { icone: "🏅", nome: "Mestre da CLT", descricao: "15 acertos consecutivos (N2)", sequencia: 15 },
+      { icone: "⚙️", nome: "Engrenagem do CPC", descricao: "20 acertos consecutivos (N2)", sequencia: 20 },
+      { icone: "🔍", nome: "Detetive do CPP", descricao: "25 acertos consecutivos (N2)", sequencia: 25 },
+      { icone: "🚦", nome: "Guardião do Trânsito", descricao: "30 acertos consecutivos (N2)", sequencia: 30 },
+      { icone: "🔒", nome: "Protetor da LGPD", descricao: "35 acertos consecutivos (N2)", sequencia: 35 }
+    ]
+  };
+
   function iniciarNivel1() {
+  // Limpa conquistas antigas para evitar medalhas fantasmas
+  conquistas = [];
+  localStorage.removeItem("cidadao_conquistas");
+  atualizarDisplayConquistas();
     if (typeof bancoPerguntas === 'undefined') {
       perguntaArea.innerHTML = '<p style="color:red;">Erro: banco de perguntas não carregado.</p>';
       return;
@@ -374,24 +405,12 @@
       // Verifica conquistas a cada 5 acertos consecutivos
       if (sequenciaAcertos % 5 === 0 && sequenciaAcertos > 0) {
         pontosGanhos += 5;
-        const conquistasMap = {
-          5: { icone: "🏅", nome: "Saber", descricao: "5 acertos consecutivos" },
-          10: { icone: "🩺", nome: "Jaleco da Justiça", descricao: "10 acertos consecutivos" },
-          15: { icone: "💎", nome: "Diamante da Cidadania", descricao: "15 acertos consecutivos" },
-          20: { icone: "🧠", nome: "Sabedoria", descricao: "20 acertos consecutivos" },
-          25: { icone: "🌟", nome: "Estrela dos Direitos", descricao: "25 acertos consecutivos" },
-          30: { icone: "⚖️", nome: "Balança da Equidade", descricao: "30 acertos consecutivos" },
-          35: { icone: "🛡️", nome: "Escudo do Consumidor", descricao: "35 acertos consecutivos" },
-          40: { icone: "📜", nome: "Pergaminho do ECA", descricao: "40 acertos consecutivos" },
-          45: { icone: "🏭", nome: "Capacete do Trabalhador", descricao: "45 acertos consecutivos" },
-          50: { icone: "⚙️", nome: "Engrenagem da Justiça", descricao: "50 acertos consecutivos" },
-          55: { icone: "🚗", nome: "Selo do Trânsito", descricao: "55 acertos consecutivos" },
-          60: { icone: "🔒", nome: "Escudo da LGPD", descricao: "60 acertos consecutivos" }
-        };
-        if (conquistasMap[sequenciaAcertos]) {
-          adicionarConquista(conquistasMap[sequenciaAcertos]);
+        const conquistasNivel = conquistasPorNivel[nivelAtual];
+        const conquista = conquistasNivel.find(c => c.sequencia === sequenciaAcertos);
+        if (conquista) {
+          adicionarConquista(conquista);
         } else {
-          adicionarConquista({ icone: "🏅", nome: `${sequenciaAcertos} acertos`, descricao: "Sequência de acertos" });
+          adicionarConquista({ icone: "🏅", nome: `${sequenciaAcertos} acertos consecutivos`, descricao: "Sequência de acertos" });
         }
         const bonusMsg = document.createElement("div");
         bonusMsg.className = "feedback correct";
